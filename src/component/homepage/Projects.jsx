@@ -2,23 +2,23 @@ import React from "react";
 
 const projects = [
   {
-    title: "Project Title goes here",
-    description: "This is a sample project card with description of the project and the tech stack used.",
-    image: "/images/project1.jpg",
+    title: "CommentaryGPT : Live Sports updates",
+    description: "Trained on sports commentary transcripts to generate live-style commentary.",
+    image: "/images/commentarygpt_app.jpeg",
     demoLink: "#",
     codeLink: "#",
   },
   {
-    title: "Project Title goes here",
-    description: "A modern project made with React, TailwindCSS, Node.js, and MongoDB. Includes dark mode support.",
-    image: "/images/project2.jpg",
+    title: "User authorization System Using FGA",
+    description: "A fine-grained access control system that dynamically manages user permissions based on roles, relationships, and contextual attributes using Google Zanzibar-style FGA (Fine-Grained Authorization).",
+    image: "/images/fga.jpeg",
     demoLink: "#",
     codeLink: "#",
   },
   {
-    title: "Project Title goes here",
-    description: "This is an amazing full stack app for tracking habits and productivity.",
-    image: "/images/project3.jpg",
+    title: "AuthPilot – Identity & Access Management",
+    description: "Identity and Access Management (IAM) platform that provides SSO, SCIM provisioning, and Fine-Grained Authorization via REST APIs and event-driven architecture",
+    image: "/images/authpilot2.png",
     demoLink: "#",
     codeLink: "#",
   }
@@ -40,17 +40,7 @@ const Projects = () => {
 
               <div className="p-5 space-y-2">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
-                {/* <p className="text-gray-400 text-sm">{project.description}</p> */}
               </div>
-
-              {/* <div className="px-5 pt-2 pb-4 flex justify-between text-sm text-gray-300">
-                <a href={project.codeLink} className="hover:text-white" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code mr-1" /> Code
-                </a>
-                <a href={project.demoLink} className="hover:text-white" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-external-link-alt mr-1" /> Live Demo
-                </a>
-              </div> */}
             </div>
           ))}
         </div>

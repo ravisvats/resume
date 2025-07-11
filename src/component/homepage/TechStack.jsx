@@ -1,17 +1,17 @@
 const basePath = './icons/'
 const techStack = [
-  { name: "HTML5", src: basePath + "html5.svg" },
-  { name: "CSS3", src: basePath + "css.svg" },
-  { name: "JavaScript", src: basePath + "jss.svg" },
-  { name: "React", src: basePath + "react.svg" },
-  { name: "Redux", src: basePath + "redux.svg" },
-  { name: "Bootstrap", src: basePath + "bootstrap.svg" },
-  { name: "Tailwind CSS", src: basePath + "tailwind.svg" },
-  { name: "Sass", src: basePath + "sass.svg" },
-  { name: "Git", src: basePath + "git.svg" },
-  { name: "SuperHero Icon", src: basePath + "superhero.svg" },
-  { name: "VS Code", src: basePath + "vscode.svg" },
-  { name: "GitHub", src: basePath + "github.svg" },
+    { name: "Python", src: basePath + "python-svgrepo-com.svg" },
+    { name: "FastAPI", src: basePath + "fastapi-svgrepo-com.svg" },
+    { name: "MySql", src: basePath + "mysql-svgrepo-com.svg" },
+    { name: "React", src: basePath + "react.svg" },
+    { name: "LLM", src: basePath + "ai-svgrepo-com.svg" },
+    { name: "Solana", src: basePath + "solana-svgrepo-com.svg" },
+    { name: "MongoDb", src: basePath + "mongodb-svgrepo-com.svg" },
+    { name: "AWS", src: basePath + "aws-ec2-svgrepo-com.svg" },
+    { name: "Git", src: basePath + "git.svg" },
+    { name: "PHP", src: basePath + "php-svgrepo-com.svg" },
+    { name: "VS Code", src: basePath + "vscode-fill-svgrepo-com.svg" },
+    { name: "GitHub", src: basePath + "github-svgrepo-com.svg" },
 ];
 
 const TechStack = () => {
