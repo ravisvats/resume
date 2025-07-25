@@ -49,16 +49,20 @@ const Intro = () => {
           <span className="text-gray-800">I build things for the web</span>
         </h1>
         <div className="mt-6 flex gap-4">
+          {/* Updated Blog Button - Opens in new tab */}
           <a
-            href="/forms"
+            href="/blogs"
             target="_blank"
-            className="px-4 py-2 bg-white text-gray-900 rounded hover:bg-gray-100 transition"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-white text-gray-900 rounded hover:bg-gray-100 transition border border-gray-300"
           >
             My Blogs
           </a>
+          {/* Updated Projects Button - Opens in new tab */}
           <a
-            href="/forms"
+            href="/projects"
             target="_blank"
+            rel="noopener noreferrer"
             className="px-4 py-2 bg-gray-200 text-gray-900 rounded hover:bg-gray-300 transition"
           >
             My Projects
