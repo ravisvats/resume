@@ -1,15 +1,19 @@
 import Blogs from "./Blog";
 import Intro from "./Intro";
 import Projects from "./Projects";
+import Resume from "./Resume";
 import TechStack from "./TechStack";
 
 const Home = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 min-h-screen p-4">
-            {/* First column: Intro and TechStack (fixed) */}
+            {/* First column: Intro, Resume, and TechStack (fixed) */}
             <div className="flex flex-col gap-4 md:sticky md:top-4 self-start">
                 <div className="bg-white shadow">
                     <Intro />
+                </div>
+                <div className="bg-white shadow">
+                    <Resume />
                 </div>
                 <div className="bg-white shadow">
                     <TechStack />

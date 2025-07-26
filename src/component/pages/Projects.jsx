@@ -4,66 +4,41 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  // Sample projects data - replace with your actual project data
+  // Real projects data matching our individual project pages
   const projects = [
     {
       id: 1,
-      title: "AuthPilot",
-      description: "A Developer-First Identity & Access Management Platform with secure authentication, developer-friendly APIs, and enterprise-ready features.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React", "Node.js", "MongoDB", "JWT"],
-      category: "Full-Stack",
-      liveUrl: "https://authpilot.example.com",
-      githubUrl: "https://github.com/yourusername/authpilot",
+      title: "CommentaryGPT: Live Sports Updates",
+      description: "An AI-powered sports commentary system that generates real-time, engaging commentary for live sports events using advanced natural language processing.",
+      image: "/images/commentarygpt_app.jpeg",
+      technologies: ["Python", "FastAPI", "OpenAI GPT", "WebSocket", "React"],
+      category: "AI/ML",
+      link: "/projects/project1",
       featured: true
     },
     {
       id: 2,
-      title: "E-Commerce Dashboard",
-      description: "A comprehensive admin dashboard for e-commerce management with real-time analytics, inventory tracking, and order management.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React", "TypeScript", "Chart.js", "Tailwind"],
-      category: "Frontend",
-      liveUrl: "https://dashboard.example.com",
-      githubUrl: "https://github.com/yourusername/ecommerce-dashboard",
+      title: "User Authorization System Using FGA",
+      description: "A fine-grained access control system that dynamically manages user permissions based on roles, relationships, and contextual attributes using Google Zanzibar-style FGA.",
+      image: "/images/fga.jpeg",
+      technologies: ["Go", "PostgreSQL", "Neo4j", "gRPC", "Kubernetes"],
+      category: "Backend",
+      link: "/projects/project2",
       featured: true
     },
     {
       id: 3,
-      title: "Task Management API",
-      description: "RESTful API for task management with user authentication, real-time notifications, and comprehensive project tracking.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Node.js", "Express", "PostgreSQL", "Socket.io"],
-      category: "Backend",
-      liveUrl: "https://api.taskmanager.example.com",
-      githubUrl: "https://github.com/yourusername/task-api",
-      featured: false
-    },
-    {
-      id: 4,
-      title: "Weather App",
-      description: "A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React Native", "Weather API", "Maps SDK"],
-      category: "Mobile",
-      liveUrl: "https://weatherapp.example.com",
-      githubUrl: "https://github.com/yourusername/weather-app",
-      featured: false
-    },
-    {
-      id: 5,
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website built with React and featuring smooth animations and interactive elements.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      category: "Frontend",
-      liveUrl: "https://portfolio.example.com",
-      githubUrl: "https://github.com/yourusername/portfolio",
-      featured: false
+      title: "AuthPilot – Identity & Access Management",
+      description: "Comprehensive Identity and Access Management platform that provides Single Sign-On, SCIM provisioning, and Fine-Grained Authorization via REST APIs.",
+      image: "/images/authpilot2.png",
+      technologies: ["Node.js", "React", "PostgreSQL", "Kafka", "Docker"],
+      category: "Full-Stack",
+      link: "/projects/project3",
+      featured: true
     }
   ];
 
-  const categories = ['All', 'Full-Stack', 'Frontend', 'Backend', 'Mobile'];
+  const categories = ['All', 'Full-Stack', 'Backend', 'AI/ML'];
 
   const filteredProjects = selectedCategory === 'All' 
     ? projects 
@@ -96,16 +71,18 @@ const Projects = () => {
         {featuredProjects.length > 0 && (
           <section className="mb-16">
             <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Projects</h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {featuredProjects.map((project) => (
                 <div 
                   key={project.id}
                   className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100"
                 >
-                  <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
-                      <span className="text-white text-lg font-semibold">Project Preview</span>
-                    </div>
+                  <div className="h-48 relative overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
                     <div className="absolute top-4 right-4">
                       <span className="bg-yellow-400 text-yellow-900 px-2 py-1 rounded-full text-xs font-semibold">
                         Featured
@@ -114,7 +91,11 @@ const Projects = () => {
                   </div>
                   
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
+                    <Link to={project.link} className="block">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2 hover:text-blue-600 transition-colors">
+                        {project.title}
+                      </h3>
+                    </Link>
                     <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
                     
                     <div className="flex flex-wrap gap-2 mb-4">
@@ -129,18 +110,14 @@ const Projects = () => {
                     </div>
                     
                     <div className="flex gap-4">
-                      <a 
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Link 
+                        to={project.link}
                         className="flex-1 bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition-colors"
                       >
-                        Live Demo
-                      </a>
+                        View Details
+                      </Link>
                       <a 
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="#"
                         className="flex-1 bg-gray-800 text-white text-center py-2 rounded-lg hover:bg-gray-900 transition-colors"
                       >
                         GitHub
@@ -166,6 +143,10 @@ const Projects = () => {
               }`}
             >
               {category}
+              <span className="ml-2 text-xs opacity-75">
+                ({category === 'All' ? projects.length : 
+                  projects.filter(p => p.category === category).length})
+              </span>
             </button>
           ))}
         </div>
@@ -177,10 +158,12 @@ const Projects = () => {
               key={project.id}
               className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-100"
             >
-              <div className="h-40 bg-gradient-to-br from-indigo-500 to-purple-600 relative overflow-hidden">
-                <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
-                  <span className="text-white font-medium">Preview</span>
-                </div>
+              <div className="h-40 relative overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute top-3 right-3">
                   <span className="bg-white bg-opacity-90 text-gray-700 px-2 py-1 rounded text-xs font-medium">
                     {project.category}
@@ -189,7 +172,11 @@ const Projects = () => {
               </div>
               
               <div className="p-5">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{project.title}</h3>
+                <Link to={project.link} className="block">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 hover:text-blue-600 transition-colors">
+                    {project.title}
+                  </h3>
+                </Link>
                 <p className="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-3">
                   {project.description}
                 </p>
@@ -211,18 +198,14 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex gap-2">
-                  <a 
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link 
+                    to={project.link}
                     className="flex-1 bg-blue-600 text-white text-center py-2 text-sm rounded hover:bg-blue-700 transition-colors"
                   >
-                    Live
-                  </a>
+                    View Details
+                  </Link>
                   <a 
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#"
                     className="flex-1 bg-gray-800 text-white text-center py-2 text-sm rounded hover:bg-gray-900 transition-colors"
                   >
                     Code

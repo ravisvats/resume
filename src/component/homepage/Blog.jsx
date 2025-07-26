@@ -1,41 +1,42 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const blogs = [
   {
     title: "What is Fine-Grained Authorization (FGA)?",
     description: "A beginner-friendly guide to understanding Fine-Grained Authorization systems and why modern apps need them.",
     image: "/images/fgablog.png",
-    link: "#",
+    link: "/blogs/blog1",
   },
   {
     title: "Building LLM-Powered Features in Your Backend",
     description: "How to integrate Large Language Models into your backend systems using APIs and fine-tuning techniques.",
     image: "/images/llmblog.png",
-    link: "#",
+    link: "/blogs/blog2",
   },
   {
     title: "Implementing SSO with OAuth2 and SAML",
     description: "A practical walkthrough on integrating Single Sign-On in your app using providers like Google and Okta.",
     image: "/images/ssoblog.png",
-    link: "#",
+    link: "/blogs/blog3",
   },
   {
     title: "Role-Based vs Fine-Grained Access Control",
     description: "Understand the difference between RBAC and FGA, and when to use each in your application.",
     image: "/images/rbacblog.png",
-    link: "#",
+    link: "/blogs/blog4",
   },
   {
     title: "Deploying FastAPI Backend to EC2",
     description: "Step-by-step guide to hosting your FastAPI backend on an AWS EC2 instance with NGINX and systemd.",
     image: "/images/fastapiblog.png",
-    link: "#",
+    link: "/blogs/blog5",
   },
   {
     title: "Best Practices for Scalable Backend Development",
     description: "Explore key architectural patterns and tools for building clean, modular, and production-ready backends.",
     image: "/images/scalableblog.png",
-    link: "#",
+    link: "/blogs/blog6",
   },
 ];
 
@@ -57,14 +58,12 @@ const Blogs = () => {
               </div>
 
               <div className="px-5 pb-4 pt-2 text-right">
-                <a
-                  href={blog.link}
+                <Link
+                  to={blog.link}
                   className="text-blue-400 hover:underline hover:text-blue-300 text-sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   Read More →
-                </a>
+                </Link>
               </div>
             </div>
           ))}

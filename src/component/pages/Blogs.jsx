@@ -4,103 +4,91 @@ import { Link } from 'react-router-dom';
 const Blog = () => {
   const [activeSection, setActiveSection] = useState('All');
 
-  // Extended blog posts data with popularity metrics
+  // Real blog posts data matching our individual blog pages
   const blogPosts = [
     {
       id: 1,
-      title: "Getting Started with React and Modern Web Development",
-      excerpt: "Learn the fundamentals of React and how to build modern web applications with the latest tools and best practices.",
+      title: "What is Fine-Grained Authorization (FGA)?",
+      excerpt: "A beginner-friendly guide to understanding Fine-Grained Authorization systems and why modern apps need them.",
       date: "2024-01-15",
-      readTime: "5 min read",
-      tags: ["React", "JavaScript", "Web Development"],
-      views: 12500,
-      likes: 248,
-      isPopular: true,
-      isRecent: true
-    },
-    {
-      id: 2,
-      title: "Building Scalable APIs with Node.js and Express",
-      excerpt: "A comprehensive guide to creating robust and scalable backend APIs using Node.js, Express, and modern development practices.",
-      date: "2024-01-10",
       readTime: "8 min read",
-      tags: ["Node.js", "Express", "API", "Backend"],
-      views: 9800,
-      likes: 189,
-      isPopular: true,
-      isRecent: true
-    },
-    {
-      id: 3,
-      title: "CSS Grid vs Flexbox: When to Use Which",
-      excerpt: "Understanding the differences between CSS Grid and Flexbox, and knowing when to use each layout method for optimal results.",
-      date: "2024-01-05",
-      readTime: "6 min read",
-      tags: ["CSS", "Layout", "Frontend"],
+      tags: ["Authorization", "Security", "Backend"],
       views: 15200,
       likes: 312,
       isPopular: true,
-      isRecent: true
+      isRecent: true,
+      link: "/blogs/blog1",
+      image: "/images/fgablog.png"
+    },
+    {
+      id: 2,
+      title: "Building LLM-Powered Features in Your Backend",
+      excerpt: "How to integrate Large Language Models into your backend systems using APIs and fine-tuning techniques.",
+      date: "2024-01-10",
+      readTime: "12 min read",
+      tags: ["AI/ML", "Backend", "APIs"],
+      views: 12800,
+      likes: 289,
+      isPopular: true,
+      isRecent: true,
+      link: "/blogs/blog2",
+      image: "/images/llmblog.png"
+    },
+    {
+      id: 3,
+      title: "Implementing SSO with OAuth2 and SAML",
+      excerpt: "A practical walkthrough on integrating Single Sign-On in your app using providers like Google and Okta.",
+      date: "2024-01-05",
+      readTime: "10 min read",
+      tags: ["Authentication", "OAuth2", "SAML"],
+      views: 9800,
+      likes: 195,
+      isPopular: true,
+      isRecent: true,
+      link: "/blogs/blog3",
+      image: "/images/ssoblog.png"
     },
     {
       id: 4,
-      title: "JavaScript ES6+ Features Every Developer Should Know",
-      excerpt: "Explore the most important ES6+ features that will make you a more productive JavaScript developer in 2024.",
-      date: "2023-12-20",
-      readTime: "7 min read",
-      tags: ["JavaScript", "ES6", "Programming"],
-      views: 18600,
-      likes: 425,
-      isPopular: true,
-      isRecent: false
-    },
-    {
-      id: 5,
-      title: "Mastering TypeScript: Advanced Types and Patterns",
-      excerpt: "Deep dive into TypeScript's advanced type system and learn patterns that will improve your code quality.",
-      date: "2023-12-10",
-      readTime: "12 min read",
-      tags: ["TypeScript", "Advanced", "Programming"],
-      views: 8900,
-      likes: 167,
-      isPopular: false,
-      isRecent: false
-    },
-    {
-      id: 6,
-      title: "Full-Stack Authentication with JWT and Refresh Tokens",
-      excerpt: "Implement secure authentication in your applications using JWT tokens and refresh token rotation strategies.",
-      date: "2023-11-28",
-      readTime: "10 min read",
-      tags: ["Authentication", "JWT", "Security"],
+      title: "Role-Based vs Fine-Grained Access Control",
+      excerpt: "Understand the difference between RBAC and FGA, and when to use each in your application.",
+      date: "2023-12-28",
+      readTime: "9 min read",
+      tags: ["Authorization", "Security", "Architecture"],
       views: 11200,
       likes: 203,
       isPopular: true,
-      isRecent: false
+      isRecent: false,
+      link: "/blogs/blog4",
+      image: "/images/rbacblog.png"
     },
     {
-      id: 7,
-      title: "Building Responsive Layouts with Tailwind CSS",
-      excerpt: "Learn how to create beautiful, responsive layouts using Tailwind CSS utility classes and best practices.",
-      date: "2023-11-15",
-      readTime: "6 min read",
-      tags: ["Tailwind", "CSS", "Responsive"],
+      id: 5,
+      title: "Deploying FastAPI Backend to EC2",
+      excerpt: "Step-by-step guide to hosting your FastAPI backend on an AWS EC2 instance with NGINX and systemd.",
+      date: "2023-12-20",
+      readTime: "11 min read",
+      tags: ["FastAPI", "AWS EC2", "Deployment"],
+      views: 8900,
+      likes: 167,
+      isPopular: false,
+      isRecent: false,
+      link: "/blogs/blog5",
+      image: "/images/fastapiblog.png"
+    },
+    {
+      id: 6,
+      title: "Best Practices for Scalable Backend Development",
+      excerpt: "Explore key architectural patterns and tools for building clean, modular, and production-ready backends.",
+      date: "2023-12-15",
+      readTime: "13 min read",
+      tags: ["Architecture", "Backend", "Best Practices"],
       views: 7300,
       likes: 134,
       isPopular: false,
-      isRecent: false
-    },
-    {
-      id: 8,
-      title: "Database Design Principles for Modern Applications",
-      excerpt: "Essential database design principles and patterns for building scalable and maintainable applications.",
-      date: "2023-11-01",
-      readTime: "9 min read",
-      tags: ["Database", "Design", "Backend"],
-      views: 6800,
-      likes: 112,
-      isPopular: false,
-      isRecent: false
+      isRecent: false,
+      link: "/blogs/blog6",
+      image: "/images/scalableblog.png"
     }
   ];
 
@@ -246,15 +234,20 @@ const Blog = () => {
                         <span>❤️ {popularPosts[0].likes}</span>
                       </div>
                       
-                      <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium">
+                      <Link 
+                        to={popularPosts[0].link}
+                        className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium inline-block"
+                      >
                         Read Full Article →
-                      </button>
+                      </Link>
                     </div>
                     
                     <div className="hidden md:block">
-                      <div className="w-full h-48 bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl flex items-center justify-center">
-                        <span className="text-white text-6xl">📖</span>
-                      </div>
+                      <img 
+                        src={popularPosts[0].image} 
+                        alt={popularPosts[0].title}
+                        className="w-full h-48 object-cover rounded-xl"
+                      />
                     </div>
                   </div>
                 </div>
@@ -293,9 +286,11 @@ const Blog = () => {
                       <span className="text-gray-400 text-sm">{post.views.toLocaleString()} views</span>
                     </div>
                     
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors cursor-pointer">
-                      {post.title}
-                    </h3>
+                    <Link to={post.link} className="block">
+                      <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors cursor-pointer">
+                        {post.title}
+                      </h3>
+                    </Link>
                     
                     <p className="text-gray-600 leading-relaxed mb-4">
                       {post.excerpt}
@@ -329,22 +324,16 @@ const Blog = () => {
                         ))}
                       </div>
                       
-                      <button className="text-blue-600 hover:text-blue-800 font-semibold transition-colors group-hover:translate-x-1 transform duration-200">
+                      <Link 
+                        to={post.link}
+                        className="text-blue-600 hover:text-blue-800 font-semibold transition-colors group-hover:translate-x-1 transform duration-200"
+                      >
                         Read More →
-                      </button>
+                      </Link>
                     </div>
                   </article>
                 ))}
               </div>
-
-              {/* Load More Button */}
-              {getFilteredPosts().length >= 6 && (
-                <div className="text-center mt-8">
-                  <button className="px-8 py-4 bg-gradient-to-r from-gray-100 to-gray-200 hover:from-gray-200 hover:to-gray-300 text-gray-700 rounded-xl transition-all duration-200 font-medium shadow-sm hover:shadow-md transform hover:scale-105">
-                    Load More Posts
-                  </button>
-                </div>
-              )}
             </div>
           </div>
 
@@ -387,7 +376,7 @@ const Blog = () => {
               <h3 className="text-lg font-bold text-gray-900 mb-4">📰 Recent Posts</h3>
               <div className="space-y-4">
                 {recentPosts.slice(0, 4).map((post) => (
-                  <div key={post.id} className="group cursor-pointer">
+                  <Link to={post.link} key={post.id} className="group cursor-pointer block">
                     <h4 className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-1 line-clamp-2">
                       {post.title}
                     </h4>
@@ -396,7 +385,7 @@ const Blog = () => {
                       <span>•</span>
                       <span>{post.readTime}</span>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -406,7 +395,7 @@ const Blog = () => {
               <h3 className="text-lg font-bold text-gray-900 mb-4">🔥 Most Popular</h3>
               <div className="space-y-4">
                 {popularPosts.slice(0, 3).map((post, index) => (
-                  <div key={post.id} className="group cursor-pointer">
+                  <Link to={post.link} key={post.id} className="group cursor-pointer block">
                     <div className="flex items-start gap-3">
                       <span className="flex-shrink-0 w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center text-xs font-bold">
                         {index + 1}
@@ -422,7 +411,7 @@ const Blog = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>

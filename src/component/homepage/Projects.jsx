@@ -1,26 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
     title: "CommentaryGPT : Live Sports updates",
     description: "Trained on sports commentary transcripts to generate live-style commentary.",
     image: "/images/commentarygpt_app.jpeg",
-    demoLink: "#",
-    codeLink: "#",
+    link: "/projects/project1",
   },
   {
     title: "User authorization System Using FGA",
     description: "A fine-grained access control system that dynamically manages user permissions based on roles, relationships, and contextual attributes using Google Zanzibar-style FGA (Fine-Grained Authorization).",
     image: "/images/fga.jpeg",
-    demoLink: "#",
-    codeLink: "#",
+    link: "/projects/project2",
   },
   {
     title: "AuthPilot – Identity & Access Management",
     description: "Identity and Access Management (IAM) platform that provides SSO, SCIM provisioning, and Fine-Grained Authorization via REST APIs and event-driven architecture",
     image: "/images/authpilot2.png",
-    demoLink: "#",
-    codeLink: "#",
+    link: "/projects/project3",
   }
 ];
 
@@ -31,7 +29,7 @@ const Projects = () => {
     <section className="bg-gray-900 py-16 px-4 text-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">Projects</h2>
-        <p className="text-gray-400 text-center mb-10">Things I’ve built so far</p>
+        <p className="text-gray-400 text-center mb-10">Things I've built so far</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
@@ -40,6 +38,16 @@ const Projects = () => {
 
               <div className="p-5 space-y-2">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
+                <p className="text-gray-400 text-sm">{project.description}</p>
+              </div>
+
+              <div className="px-5 pb-4 pt-2 text-right">
+                <Link
+                  to={project.link}
+                  className="text-blue-400 hover:underline hover:text-blue-300 text-sm"
+                >
+                  View Project →
+                </Link>
               </div>
             </div>
           ))}
