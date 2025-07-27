@@ -3,11 +3,11 @@ import { FaTwitter, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 const Intro = () => {
   return (
-    <section className="flex flex-col md:flex-row items-start bg-white text-gray-900 w-full px-10 py-20">
+    <section className="flex flex-col md:flex-row items-start bg-white text-gray-900 w-full px-10 py-20 pt-4">
       {/* Left Section: Text */}
       <div className="flex-2 text-left w-full">
         {/* Social Icons Top Left */}
-        <div className="absolute top-4 left-4 flex gap-6 z-50">
+        <div className="flex gap-6 pb-2 justify-center md:justify-start">
           <a
             href="https://x.com/ravisvats"
             target="_blank"

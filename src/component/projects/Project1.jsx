@@ -239,19 +239,19 @@ class CommentaryGPT {
         <div className="mt-12 flex flex-wrap gap-4">
           <a 
             href="#" 
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium flex items-center gap-2"
+            className="px-6 py-3 bg-blue-600 !text-white rounded-lg hover:bg-blue-700 transition-colors font-medium flex items-center gap-2"
           >
             🚀 Live Demo
           </a>
           <a 
             href="#" 
-            className="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors font-medium flex items-center gap-2"
+            className="px-6 py-3 bg-gray-800 !text-white rounded-lg hover:bg-gray-900 transition-colors font-medium flex items-center gap-2"
           >
             📱 GitHub Repository
           </a>
           <a 
             href="#" 
-            className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center gap-2"
+            className="px-6 py-3 bg-green-600 !text-white rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center gap-2"
           >
             📄 Technical Documentation
           </a>

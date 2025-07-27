@@ -58,7 +58,7 @@ const Projects = () => {
             </div>
             <Link 
               to="/" 
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="px-4 py-2 bg-blue-600 !text-white rounded-lg hover:bg-blue-700 transition-colors"
             >
               ← Back to Home
             </Link>
@@ -112,13 +112,13 @@ const Projects = () => {
                     <div className="flex gap-4">
                       <Link 
                         to={project.link}
-                        className="flex-1 bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                        className="flex-1 bg-blue-600 !text-white text-center py-2 rounded-lg hover:bg-blue-700 transition-colors"
                       >
                         View Details
                       </Link>
                       <a 
                         href="#"
-                        className="flex-1 bg-gray-800 text-white text-center py-2 rounded-lg hover:bg-gray-900 transition-colors"
+                        className="flex-1 bg-gray-800 !text-white text-center py-2 rounded-lg hover:bg-gray-900 transition-colors"
                       >
                         GitHub
                       </a>
@@ -139,7 +139,7 @@ const Projects = () => {
               className={`px-4 py-2 rounded-lg transition-colors ${
                 selectedCategory === category
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+                  : 'bg-white text-[#777] hover:bg-gray-50 border border-gray-200'
               }`}
             >
               {category}
@@ -200,13 +200,13 @@ const Projects = () => {
                 <div className="flex gap-2">
                   <Link 
                     to={project.link}
-                    className="flex-1 bg-blue-600 text-white text-center py-2 text-sm rounded hover:bg-blue-700 transition-colors"
+                    className="flex-1 bg-blue-600 !text-white text-center py-2 text-sm rounded hover:bg-blue-700 transition-colors"
                   >
                     View Details
                   </Link>
                   <a 
                     href="#"
-                    className="flex-1 bg-gray-800 text-white text-center py-2 text-sm rounded hover:bg-gray-900 transition-colors"
+                    className="flex-1 bg-gray-800 !text-white text-center py-2 text-sm rounded hover:bg-gray-900 transition-colors"
                   >
                     Code
                   </a>

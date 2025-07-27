@@ -27,19 +27,19 @@ const Project2 = () => {
             <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium">Security</span>
             <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-medium">Backend</span>
           </div>
-          
+
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
             User Authorization System Using FGA
           </h1>
-          
+
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
-            A fine-grained access control system that dynamically manages user permissions based on roles, relationships, 
+            A fine-grained access control system that dynamically manages user permissions based on roles, relationships,
             and contextual attributes using Google Zanzibar-style FGA architecture.
           </p>
-          
-          <img 
-            src="/images/fga.jpeg" 
-            alt="Fine-Grained Authorization System" 
+
+          <img
+            src="/images/fga.jpeg"
+            alt="Fine-Grained Authorization System"
             className="w-full h-64 md:h-80 object-cover rounded-xl shadow-lg"
           />
         </header>
@@ -48,13 +48,13 @@ const Project2 = () => {
         <div className="prose prose-lg max-w-none">
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Project Overview</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            This advanced authorization system implements Fine-Grained Authorization (FGA) principles inspired by Google's Zanzibar, 
-            providing a scalable, flexible, and secure way to manage complex permission structures. The system supports 
+            This advanced authorization system implements Fine-Grained Authorization (FGA) principles inspired by Google's Zanzibar,
+            providing a scalable, flexible, and secure way to manage complex permission structures. The system supports
             relationship-based access control, contextual permissions, and real-time authorization decisions.
           </p>
-          
+
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Core Features</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-blue-50 rounded-lg p-6">
               <h4 className="font-semibold text-blue-900 mb-3">🔐 Relationship-Based Access</h4>
@@ -62,21 +62,21 @@ const Project2 = () => {
                 Define permissions through user-resource relationships like owner, editor, viewer with inheritance.
               </p>
             </div>
-            
+
             <div className="bg-green-50 rounded-lg p-6">
               <h4 className="font-semibold text-green-900 mb-3">⚡ Real-Time Evaluation</h4>
               <p className="text-green-800 text-sm">
                 Sub-millisecond permission checks with intelligent caching and optimized graph traversal.
               </p>
             </div>
-            
+
             <div className="bg-purple-50 rounded-lg p-6">
               <h4 className="font-semibold text-purple-900 mb-3">🎯 Contextual Permissions</h4>
               <p className="text-purple-800 text-sm">
                 Support for time-based, location-based, and attribute-based access control policies.
               </p>
             </div>
-            
+
             <div className="bg-orange-50 rounded-lg p-6">
               <h4 className="font-semibold text-orange-900 mb-3">📊 Multi-Tenant Support</h4>
               <p className="text-orange-800 text-sm">
@@ -86,13 +86,13 @@ const Project2 = () => {
           </div>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Technical Architecture</h2>
-          
+
           <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Zanzibar-Inspired Design</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The system follows Google Zanzibar's proven architecture for global-scale authorization, adapted for 
+            The system follows Google Zanzibar's proven architecture for global-scale authorization, adapted for
             general-purpose applications with enhanced flexibility and easier deployment.
           </p>
-          
+
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
             <h4 className="font-semibold text-gray-900 mb-3">Architecture Components:</h4>
             <ul className="text-gray-700 space-y-2">
@@ -105,7 +105,7 @@ const Project2 = () => {
           </div>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Permission Model</h3>
-          
+
           <div className="bg-gray-900 text-green-400 rounded-lg p-6 mb-6 text-sm">
             <pre>{`// Example Permission Model Configuration
 {
@@ -154,27 +154,27 @@ const Project2 = () => {
           </div>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Key Capabilities</h2>
-          
+
           <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">1. Dynamic Relationship Management</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Create, modify, and delete user-resource relationships in real-time with automatic permission propagation 
+            Create, modify, and delete user-resource relationships in real-time with automatic permission propagation
             and consistency maintenance across the entire system.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">2. Advanced Policy Language</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Define complex authorization policies using a declarative language that supports conditions, 
+            Define complex authorization policies using a declarative language that supports conditions,
             attribute-based rules, and temporal constraints.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">3. Audit and Compliance</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Comprehensive audit logging of all authorization decisions with detailed reasoning trails for 
+            Comprehensive audit logging of all authorization decisions with detailed reasoning trails for
             compliance reporting and security analysis.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Technology Stack</h2>
-          
+
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h4 className="font-semibold text-gray-900 mb-3">Backend</h4>
@@ -186,7 +186,7 @@ const Project2 = () => {
                 <li>Jaeger (Tracing)</li>
               </ul>
             </div>
-            
+
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h4 className="font-semibold text-gray-900 mb-3">Security</h4>
               <ul className="text-gray-700 text-sm space-y-2">
@@ -197,7 +197,7 @@ const Project2 = () => {
                 <li>Audit Logging</li>
               </ul>
             </div>
-            
+
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h4 className="font-semibold text-gray-900 mb-3">Infrastructure</h4>
               <ul className="text-gray-700 text-sm space-y-2">
@@ -211,7 +211,7 @@ const Project2 = () => {
           </div>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Implementation Examples</h2>
-          
+
           <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Permission Check API</h3>
           <div className="bg-gray-900 text-green-400 rounded-lg p-6 mb-6 text-sm">
             <pre>{`// Check Permission API Call
@@ -258,13 +258,13 @@ POST /v1/authz/relationships/query
           </div>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Performance & Scalability</h2>
-          
+
           <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-lg p-6 mb-8">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-semibold text-gray-900 mb-3">⚡ Performance Metrics</h4>
                 <ul className="text-gray-700 space-y-2">
-                                     <li>• Sub-2ms average permission check latency</li>
+                  <li>• Sub-2ms average permission check latency</li>
                   <li>• 100,000+ RPS throughput capability</li>
                   <li>• 99.99% availability SLA</li>
                   <li>• Horizontal scaling support</li>
@@ -283,7 +283,7 @@ POST /v1/authz/relationships/query
           </div>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Security Features</h2>
-          
+
           <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
             <li><strong>Zero-Trust Architecture:</strong> Every request is authenticated and authorized</li>
             <li><strong>Principle of Least Privilege:</strong> Users get minimal necessary permissions</li>
@@ -293,7 +293,7 @@ POST /v1/authz/relationships/query
           </ul>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Use Cases</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-gray-50 rounded-lg p-6">
               <h4 className="font-semibold text-gray-900 mb-3">Enterprise SaaS</h4>
@@ -301,21 +301,21 @@ POST /v1/authz/relationships/query
                 Multi-tenant applications with complex organizational hierarchies and shared resources.
               </p>
             </div>
-            
+
             <div className="bg-gray-50 rounded-lg p-6">
               <h4 className="font-semibold text-gray-900 mb-3">Document Management</h4>
               <p className="text-gray-700 text-sm">
                 File sharing platforms with granular permissions and collaborative features.
               </p>
             </div>
-            
+
             <div className="bg-gray-50 rounded-lg p-6">
               <h4 className="font-semibold text-gray-900 mb-3">Healthcare Systems</h4>
               <p className="text-gray-700 text-sm">
                 Patient data access with strict compliance and audit requirements.
               </p>
             </div>
-            
+
             <div className="bg-gray-50 rounded-lg p-6">
               <h4 className="font-semibold text-gray-900 mb-3">Financial Services</h4>
               <p className="text-gray-700 text-sm">
@@ -326,8 +326,8 @@ POST /v1/authz/relationships/query
 
           <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg p-6 mt-8">
             <p className="text-gray-700 italic">
-              "This FGA system demonstrates how modern authorization can be both powerful and performant. 
-              By implementing Zanzibar's proven concepts with contemporary tools, we achieve enterprise-grade 
+              "This FGA system demonstrates how modern authorization can be both powerful and performant.
+              By implementing Zanzibar's proven concepts with contemporary tools, we achieve enterprise-grade
               security without sacrificing developer experience."
             </p>
           </div>
@@ -335,21 +335,21 @@ POST /v1/authz/relationships/query
 
         {/* Project Links */}
         <div className="mt-12 flex flex-wrap gap-4">
-          <a 
-            href="#" 
-            className="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors font-medium flex items-center gap-2"
+          <a
+            href="#"
+            className="px-6 py-3 bg-indigo-600 !text-white rounded-lg hover:bg-indigo-700 transition-colors font-medium flex items-center gap-2"
           >
             🔐 Live Demo
           </a>
-          <a 
-            href="#" 
-            className="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors font-medium flex items-center gap-2"
+          <a
+            href="#"
+            className="px-6 py-3 bg-gray-800 !text-white rounded-lg hover:bg-gray-900 transition-colors font-medium flex items-center gap-2"
           >
             📱 GitHub Repository
           </a>
-          <a 
-            href="#" 
-            className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center gap-2"
+          <a
+            href="#"
+            className="px-6 py-3 bg-green-600 !text-white rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center gap-2"
           >
             📄 API Documentation
           </a>
@@ -358,9 +358,9 @@ POST /v1/authz/relationships/query
         {/* Author Section */}
         <div className="border-t border-gray-200 mt-12 pt-8">
           <div className="flex items-center gap-4">
-            <img 
-              src="/src/assets/ravi_passport.jpeg" 
-              alt="Ravi Vats" 
+            <img
+              src="/src/assets/ravi_passport.jpeg"
+              alt="Ravi Vats"
               className="w-16 h-16 rounded-full object-cover"
             />
             <div>

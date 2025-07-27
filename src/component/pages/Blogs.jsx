@@ -123,7 +123,7 @@ const Blog = () => {
             </div>
             <Link 
               to="/" 
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+              className="px-6 py-3 bg-blue-600 !text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
               ← Back to Home
             </Link>
@@ -184,7 +184,7 @@ const Blog = () => {
                   className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
                     activeSection === section
                       ? 'bg-blue-600 text-white shadow-lg transform scale-105'
-                      : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200 hover:border-gray-300'
+                      : 'bg-white text-[#777] hover:bg-gray-50 border border-gray-200 hover:border-gray-300'
                   }`}
                 >
                   {section}
@@ -236,7 +236,7 @@ const Blog = () => {
                       
                       <Link 
                         to={popularPosts[0].link}
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium inline-block"
+                        className="bg-gradient-to-r from-blue-600 to-purple-600 !text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium inline-block"
                       >
                         Read Full Article →
                       </Link>
@@ -428,7 +428,7 @@ const Blog = () => {
                   placeholder="Your email"
                   className="w-full px-3 py-2 rounded-lg text-gray-900 placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
                 />
-                <button className="w-full bg-white text-blue-600 py-2 rounded-lg font-medium text-sm hover:bg-gray-100 transition-colors">
+                <button className="w-full bg-white text-white py-2 rounded-lg font-medium text-sm hover:bg-gray-100 transition-colors">
                   Subscribe
                 </button>
               </div>
