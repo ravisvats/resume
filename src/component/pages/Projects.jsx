@@ -13,7 +13,7 @@ const Projects = () => {
       image: "/images/commentarygpt_app.jpeg",
       technologies: ["Python", "FastAPI", "OpenAI GPT", "WebSocket", "React"],
       category: "AI/ML",
-      link: "/projects/project1",
+      link: "/projects/commentarygpt",
       featured: true
     },
     {
@@ -23,7 +23,7 @@ const Projects = () => {
       image: "/images/fga.jpeg",
       technologies: ["Go", "PostgreSQL", "Neo4j", "gRPC", "Kubernetes"],
       category: "Backend",
-      link: "/projects/project2",
+      link: "/projects/user-authorization-system",
       featured: true
     },
     {
@@ -33,7 +33,7 @@ const Projects = () => {
       image: "/images/authpilot2.png",
       technologies: ["Node.js", "React", "PostgreSQL", "Kafka", "Docker"],
       category: "Full-Stack",
-      link: "/projects/project3",
+      link: "/projects/authpilot",
       featured: true
     }
   ];

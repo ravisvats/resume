@@ -6,37 +6,37 @@ const blogs = [
     title: "What is Fine-Grained Authorization (FGA)?",
     description: "A beginner-friendly guide to understanding Fine-Grained Authorization systems and why modern apps need them.",
     image: "/images/fgablog.png",
-    link: "/blogs/blog1",
+    link: "/blogs/fine-grained-authorization",
   },
   {
     title: "Building LLM-Powered Features in Your Backend",
     description: "How to integrate Large Language Models into your backend systems using APIs and fine-tuning techniques.",
     image: "/images/llmblog.png",
-    link: "/blogs/blog2",
+    link: "/blogs/llm-backend-integration",
   },
   {
     title: "Implementing SSO with OAuth2 and SAML",
     description: "A practical walkthrough on integrating Single Sign-On in your app using providers like Google and Okta.",
     image: "/images/ssoblog.png",
-    link: "/blogs/blog3",
+    link: "/blogs/sso-implementation",
   },
   {
     title: "Role-Based vs Fine-Grained Access Control",
     description: "Understand the difference between RBAC and FGA, and when to use each in your application.",
     image: "/images/rbacblog.png",
-    link: "/blogs/blog4",
+    link: "/blogs/rbac-vs-fga",
   },
   {
     title: "Deploying FastAPI Backend to EC2",
     description: "Step-by-step guide to hosting your FastAPI backend on an AWS EC2 instance with NGINX and systemd.",
     image: "/images/fastapiblog.png",
-    link: "/blogs/blog5",
+    link: "/blogs/fastapi-deployment",
   },
   {
     title: "Best Practices for Scalable Backend Development",
     description: "Explore key architectural patterns and tools for building clean, modular, and production-ready backends.",
     image: "/images/scalableblog.png",
-    link: "/blogs/blog6",
+    link: "/blogs/scalable-backend-development",
   },
 ];
 

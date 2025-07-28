@@ -17,7 +17,7 @@ const Blog = () => {
       likes: 312,
       isPopular: true,
       isRecent: true,
-      link: "/blogs/blog1",
+      link: "/blogs/fine-grained-authorization",
       image: "/images/fgablog.png"
     },
     {
@@ -31,7 +31,7 @@ const Blog = () => {
       likes: 289,
       isPopular: true,
       isRecent: true,
-      link: "/blogs/blog2",
+      link: "/blogs/llm-backend-integration",
       image: "/images/llmblog.png"
     },
     {
@@ -45,7 +45,7 @@ const Blog = () => {
       likes: 195,
       isPopular: true,
       isRecent: true,
-      link: "/blogs/blog3",
+      link: "/blogs/sso-implementation",
       image: "/images/ssoblog.png"
     },
     {
@@ -59,7 +59,7 @@ const Blog = () => {
       likes: 203,
       isPopular: true,
       isRecent: false,
-      link: "/blogs/blog4",
+      link: "/blogs/rbac-vs-fga",
       image: "/images/rbacblog.png"
     },
     {
@@ -73,7 +73,7 @@ const Blog = () => {
       likes: 167,
       isPopular: false,
       isRecent: false,
-      link: "/blogs/blog5",
+      link: "/blogs/fastapi-deployment",
       image: "/images/fastapiblog.png"
     },
     {
@@ -87,7 +87,7 @@ const Blog = () => {
       likes: 134,
       isPopular: false,
       isRecent: false,
-      link: "/blogs/blog6",
+      link: "/blogs/scalable-backend-development",
       image: "/images/scalableblog.png"
     }
   ];

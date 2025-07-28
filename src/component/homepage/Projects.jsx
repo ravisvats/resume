@@ -6,19 +6,19 @@ const projects = [
     title: "CommentaryGPT : Live Sports updates",
     description: "Trained on sports commentary transcripts to generate live-style commentary.",
     image: "/images/commentarygpt_app.jpeg",
-    link: "/projects/project1",
+    link: "/projects/commentarygpt",
   },
   {
     title: "User authorization System Using FGA",
     description: "A fine-grained access control system that dynamically manages user permissions based on roles, relationships, and contextual attributes using Google Zanzibar-style FGA (Fine-Grained Authorization).",
     image: "/images/fga.jpeg",
-    link: "/projects/project2",
+    link: "/projects/user-authorization-system",
   },
   {
     title: "AuthPilot – Identity & Access Management",
     description: "Identity and Access Management (IAM) platform that provides SSO, SCIM provisioning, and Fine-Grained Authorization via REST APIs and event-driven architecture",
     image: "/images/authpilot2.png",
-    link: "/projects/project3",
+    link: "/projects/authpilot",
   }
 ];
 

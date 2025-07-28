@@ -8,17 +8,17 @@ import Projects from './component/pages/Projects'; // New projects component
 import Resume from './component/pages/Resume'; // New resume page
 
 // Import individual blog components
-import Blog1 from './component/blogs/Blog1';
-import Blog2 from './component/blogs/Blog2';
-import Blog3 from './component/blogs/Blog3';
-import Blog4 from './component/blogs/Blog4';
-import Blog5 from './component/blogs/Blog5';
-import Blog6 from './component/blogs/Blog6';
+import FineGrainedAuthorization from './component/blogs/FineGrainedAuthorization';
+import LLMBackendIntegration from './component/blogs/LLMBackendIntegration';
+import SSOImplementation from './component/blogs/SSOImplementation';
+import RBACvsFGA from './component/blogs/RBACvsFGA';
+import FastAPIDeployment from './component/blogs/FastAPIDeployment';
+import ScalableBackendDevelopment from './component/blogs/ScalableBackendDevelopment';
 
 // Import individual project components
-import Project1 from './component/projects/Project1';
-import Project2 from './component/projects/Project2';
-import Project3 from './component/projects/Project3';
+import CommentaryGPT from './component/projects/CommentaryGPT';
+import UserAuthorizationSystem from './component/projects/UserAuthorizationSystem';
+import AuthPilot from './component/projects/AuthPilot';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,17 +33,17 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         
         {/* Individual blog routes */}
-        <Route path="/blogs/blog1" element={<Blog1 />} />
-        <Route path="/blogs/blog2" element={<Blog2 />} />
-        <Route path="/blogs/blog3" element={<Blog3 />} />
-        <Route path="/blogs/blog4" element={<Blog4 />} />
-        <Route path="/blogs/blog5" element={<Blog5 />} />
-        <Route path="/blogs/blog6" element={<Blog6 />} />
+        <Route path="/blogs/fine-grained-authorization" element={<FineGrainedAuthorization />} />
+        <Route path="/blogs/llm-backend-integration" element={<LLMBackendIntegration />} />
+        <Route path="/blogs/sso-implementation" element={<SSOImplementation />} />
+        <Route path="/blogs/rbac-vs-fga" element={<RBACvsFGA />} />
+        <Route path="/blogs/fastapi-deployment" element={<FastAPIDeployment />} />
+        <Route path="/blogs/scalable-backend-development" element={<ScalableBackendDevelopment />} />
         
         {/* Individual project routes */}
-        <Route path="/projects/project1" element={<Project1 />} />
-        <Route path="/projects/project2" element={<Project2 />} />
-        <Route path="/projects/project3" element={<Project3 />} />
+        <Route path="/projects/commentarygpt" element={<CommentaryGPT />} />
+        <Route path="/projects/user-authorization-system" element={<UserAuthorizationSystem />} />
+        <Route path="/projects/authpilot" element={<AuthPilot />} />
       </Routes>
     </Router>
   );
