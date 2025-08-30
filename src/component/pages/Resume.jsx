@@ -96,8 +96,8 @@ const Resume = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-blue-600 text-lg">📞</span>
-                  <a href="tel:+918875603044" className="hover:text-blue-600 transition-colors">
-                    +91-8875603044
+                  <a href="tel:+910000000000" className="hover:text-blue-600 transition-colors">
+                    +91-0000000000
                   </a>
                 </div>
                 <div className="flex items-center gap-3">

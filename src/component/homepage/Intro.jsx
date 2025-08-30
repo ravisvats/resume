@@ -34,7 +34,7 @@ const Intro = () => {
             <FaEnvelope />
           </a>
           <a
-            href="https://wa.me/918875603044"
+            href="https://wa.me/910000000000"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-600 hover:text-green-800 text-4xl transition"
