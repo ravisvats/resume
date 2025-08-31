@@ -79,7 +79,7 @@ const Resume = () => {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <img 
-                  src="/src/assets/ravi_passport.jpeg" 
+                  src="/images/ravi_passport.jpeg" 
                   alt="Ravi Shankar Vats" 
                   className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg"
                 />
