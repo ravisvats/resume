@@ -40,7 +40,7 @@ const Resume = () => {
     {
       company: "Delhivery",
       position: "SDE I",
-      duration: "11/2020 - 4/2022",
+      duration: "03/2017 - 4/2022",
       achievements: [
         "Developed APIs for functionalities of the app, with testing on both staging and prod environments.",
         "Creating Database Schema with PostgreSQL both for APIs and scripts for CRON jobs running regularly on different servers.",
@@ -95,10 +95,10 @@ const Resume = () => {
                   <span>Gurugram, HR (122101), India</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-blue-600 text-lg">📞</span>
+                  {/* <span className="text-blue-600 text-lg">📞</span>
                   <a href="tel:+910000000000" className="hover:text-blue-600 transition-colors">
                     +91-0000000000
-                  </a>
+                  </a> */}
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-blue-600 text-lg">✉️</span>
@@ -122,13 +122,13 @@ const Resume = () => {
             
             <div className="flex flex-col justify-center items-center md:items-end gap-4">
               <div className="text-center md:text-right">
-                <div className="text-3xl font-bold text-blue-600">5+</div>
+                <div className="text-3xl font-bold text-blue-600">8+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
-              <button className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-medium flex items-center gap-3 shadow-lg">
-                <span>📄</span>
-                Download PDF Resume
-              </button>
+              <button class="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors font-medium flex items-center gap-3 shadow-lg border border-blue-600">
+  <span>📄</span>
+  Download PDF Resume
+</button>
             </div>
           </div>
         </div>
@@ -141,7 +141,7 @@ const Resume = () => {
           </h3>
           <p className="text-gray-700 leading-relaxed text-lg">
             Innovative Software Solution Architect and Technical Lead with in-depth understanding of 
-            software development and system design illustrated over 5+ years of experience in similar 
+            software development and system design illustrated over 8+ years of experience in similar 
             roles at fast paced startups such as Delhivery, GoMechanic, Zenarate. Expertise in building 
             scalable microservices, implementing fine-grained authorization systems, and leading 
             technical teams in high-growth environments.
