@@ -7,6 +7,9 @@ import Blogs from './component/pages/Blogs'; // New blog component
 import Projects from './component/pages/Projects'; // New projects component
 import Resume from './component/pages/Resume'; // New resume page
 import AuthAppPage from './component/pages/AuthApp';
+import Footer from './component/common/Footer';
+import Privacy from './component/pages/Privacy';
+import Terms from './component/pages/Terms';
 
 // Import individual blog components
 import FineGrainedAuthorization from './component/blogs/FineGrainedAuthorization';
@@ -27,28 +30,37 @@ function App() {
 
   return (
    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/forms" element={<Forms />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/authapp" element={<AuthAppPage />} />
-        
-        {/* Individual blog routes */}
-        <Route path="/blogs/fine-grained-authorization" element={<FineGrainedAuthorization />} />
-        <Route path="/blogs/llm-backend-integration" element={<LLMBackendIntegration />} />
-        <Route path="/blogs/sso-implementation" element={<SSOImplementation />} />
-        <Route path="/blogs/rbac-vs-fga" element={<RBACvsFGA />} />
-        <Route path="/blogs/fastapi-deployment" element={<FastAPIDeployment />} />
-        <Route path="/blogs/scalable-backend-development" element={<ScalableBackendDevelopment />} />
-        <Route path="/blogs/zanzibar-fga-explained" element={<ZanzibarFGAExplained />} />
-        
-        {/* Individual project routes */}
-        <Route path="/projects/commentarygpt" element={<CommentaryGPT />} />
-        <Route path="/projects/user-authorization-system" element={<UserAuthorizationSystem />} />
-        <Route path="/projects/authpilot" element={<AuthPilot />} />
-      </Routes>
+      <div className="min-h-screen flex flex-col bg-white">
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/forms" element={<Forms />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/authapp" element={<AuthAppPage />} />
+
+            {/* Policy pages */}
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
+            
+            {/* Individual blog routes */}
+            <Route path="/blogs/fine-grained-authorization" element={<FineGrainedAuthorization />} />
+            <Route path="/blogs/llm-backend-integration" element={<LLMBackendIntegration />} />
+            <Route path="/blogs/sso-implementation" element={<SSOImplementation />} />
+            <Route path="/blogs/rbac-vs-fga" element={<RBACvsFGA />} />
+            <Route path="/blogs/fastapi-deployment" element={<FastAPIDeployment />} />
+            <Route path="/blogs/scalable-backend-development" element={<ScalableBackendDevelopment />} />
+            <Route path="/blogs/zanzibar-fga-explained" element={<ZanzibarFGAExplained />} />
+            
+            {/* Individual project routes */}
+            <Route path="/projects/commentarygpt" element={<CommentaryGPT />} />
+            <Route path="/projects/user-authorization-system" element={<UserAuthorizationSystem />} />
+            <Route path="/projects/authpilot" element={<AuthPilot />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }

@@ -64,8 +64,6 @@ const AuthAppHero = () => {
             </a>
             <a
               href="/authapp"
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-gray-900 border border-gray-300 font-semibold shadow hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-300"
             >
               Explore Services

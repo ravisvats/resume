@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FiShield, FiUsers, FiShuffle, FiDatabase, FiZap, FiLayers, FiFileText, FiCloud, FiServer, FiGitBranch, FiCheckCircle } from 'react-icons/fi';
 
 const Section = ({ title, children, subtitle }) => (
@@ -34,12 +35,19 @@ const AuthAppPage = () => {
           <p className="mt-4 text-gray-700 text-base md:text-lg">
             AuthApp™ brings continuous, Zanzibar-style Fine-Grained Authorization to your stack.
           </p>
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex justify-center gap-3">
+            <Link
+              to="/"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-gray-900 border border-gray-300 font-semibold shadow hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-300"
+    
+            >
+              ← Back to Home
+            </Link>
             <a
               href="https://wa.me/918875603044"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-gray-900 border border-gray-300 font-semibold shadow hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-300"
+              className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-indigo-100 text-white text-sm font-medium shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-300"
             >
               Book a Consultation
             </a>
@@ -89,19 +97,12 @@ const AuthAppPage = () => {
 
       {/* Architecture */}
       <Section title="Architecture Overview">
-        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 overflow-x-auto">
-          <pre className="text-xs md:text-sm text-gray-800 leading-relaxed">
-{`[Client Data Sources]  ──►  [CDC Layer: Debezium/Kafka/AWS DMS]
-                                  │
-                                  ▼
-                          [AuthStream Tuple Store]
-                                  │
-       ┌───────────────  [OpenFGA Engine]  ───────────────┐
-       │                                                  │
-  [REST/gRPC API Layer]                          [Admin Console & Governance UI]
-       │                                                  │
-  <--- Check/List Calls ----------------------- Policy Mgmt / Audit Exports`}
-          </pre>
+        <div className="flex justify-center">
+          <img
+            src="/images/FGA_Arch.jpeg"
+            alt="FGA Architecture Overview"
+            className="w-full md:w-2/3 lg:w-1/2 h-auto rounded-xl"
+          />
         </div>
       </Section>
 
@@ -168,7 +169,17 @@ const AuthAppPage = () => {
       {/* Contact */}
       <Section>
         <div className="text-center">
-          <p className="text-gray-800">📩 <strong>Contact</strong>: <a className="text-indigo-700 hover:underline" href="mailto:ravisvats@gmail.com">ravisvats@gmail.com</a></p>
+          <div className="flex items-center justify-center gap-3">
+            <p className="text-gray-800">📩 <strong>Contact</strong>: <a className="text-indigo-700 hover:underline" href="mailto:ravisvats@gmail.com">ravisvats@gmail.com</a></p>
+            <a
+              href="https://wa.me/918875603044"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-indigo-100 text-white text-sm font-medium shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+            >
+              Book a Consultation
+            </a>
+          </div>
         </div>
       </Section>
     </main>
