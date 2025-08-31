@@ -7,6 +7,20 @@ const Blog = () => {
   // Real blog posts data matching our individual blog pages
   const blogPosts = [
     {
+      id: 7,
+      title: "Is RBAC Holding You Back? Zanzibar Fine-Grained Authorization Explained",
+      excerpt: "Why RBAC fails at scale and how Zanzibar FGA fixes role explosion with relationship-based access.",
+      date: "2025-03-10",
+      readTime: "10 min read",
+      tags: ["Authorization", "FGA", "Zanzibar"],
+      views: 0,
+      likes: 0,
+      isPopular: true,
+      isRecent: true,
+      link: "/blogs/zanzibar-fga-explained",
+      image: "/images/Zanzibar_fga.jpeg"
+    },
+    {
       id: 1,
       title: "What is Fine-Grained Authorization (FGA)?",
       excerpt: "A beginner-friendly guide to understanding Fine-Grained Authorization systems and why modern apps need them.",

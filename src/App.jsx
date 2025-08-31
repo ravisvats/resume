@@ -6,6 +6,7 @@ import Forms from "./component/forms/Forms";
 import Blogs from './component/pages/Blogs'; // New blog component
 import Projects from './component/pages/Projects'; // New projects component
 import Resume from './component/pages/Resume'; // New resume page
+import AuthAppPage from './component/pages/AuthApp';
 
 // Import individual blog components
 import FineGrainedAuthorization from './component/blogs/FineGrainedAuthorization';
@@ -14,6 +15,7 @@ import SSOImplementation from './component/blogs/SSOImplementation';
 import RBACvsFGA from './component/blogs/RBACvsFGA';
 import FastAPIDeployment from './component/blogs/FastAPIDeployment';
 import ScalableBackendDevelopment from './component/blogs/ScalableBackendDevelopment';
+import ZanzibarFGAExplained from './component/blogs/ZanzibarFGAExplained';
 
 // Import individual project components
 import CommentaryGPT from './component/projects/CommentaryGPT';
@@ -31,6 +33,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/authapp" element={<AuthAppPage />} />
         
         {/* Individual blog routes */}
         <Route path="/blogs/fine-grained-authorization" element={<FineGrainedAuthorization />} />
@@ -39,6 +42,7 @@ function App() {
         <Route path="/blogs/rbac-vs-fga" element={<RBACvsFGA />} />
         <Route path="/blogs/fastapi-deployment" element={<FastAPIDeployment />} />
         <Route path="/blogs/scalable-backend-development" element={<ScalableBackendDevelopment />} />
+        <Route path="/blogs/zanzibar-fga-explained" element={<ZanzibarFGAExplained />} />
         
         {/* Individual project routes */}
         <Route path="/projects/commentarygpt" element={<CommentaryGPT />} />

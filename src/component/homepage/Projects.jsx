@@ -24,27 +24,25 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="relative bg-gray-900 text-white">
-    <div className="">
-    <section className="bg-gray-900 py-16 px-4 text-white">
+    <section className="py-16 px-4 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">Projects</h2>
-        <p className="text-gray-400 text-center mb-10">Things I've built so far</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-gray-900">Projects</h2>
+        <p className="text-gray-600 text-center mb-10">Things I've built so far</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
-            <div key={idx} className="bg-gray-800 rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-2xl">
+            <div key={idx} className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
               <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
 
               <div className="p-5 space-y-2">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
-                <p className="text-gray-400 text-sm">{project.description}</p>
+                <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
+                <p className="text-gray-600 text-sm">{project.description}</p>
               </div>
 
               <div className="px-5 pb-4 pt-2 text-right">
                 <Link
                   to={project.link}
-                  className="text-blue-400 hover:underline hover:text-blue-300 text-sm"
+                  className="text-indigo-700 hover:underline hover:text-indigo-600 text-sm"
                 >
                   View Project →
                 </Link>
@@ -54,9 +52,6 @@ const Projects = () => {
         </div>
       </div>
     </section>
-      </div>
-</div>
-
   );
 };
 

@@ -3,16 +3,33 @@ import { FaTwitter, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 const Intro = () => {
   return (
-    <section className="flex flex-col md:flex-row items-start bg-white text-gray-900 w-full px-10 py-20 pt-4">
-      {/* Left Section: Text */}
-      <div className="flex-2 text-left w-full">
-        {/* Social Icons Top Left */}
-        <div className="flex gap-6 pb-2 justify-center md:justify-start">
+    <header className="w-full bg-white text-gray-900 px-4 md:px-6 py-3 shadow-sm rounded">
+      <div className="flex items-center justify-between gap-4">
+        {/* Left: Logo */}
+        <a href="/" className="flex items-center gap-3">
+          <div className="w-12 h-12 rounded-full p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
+            <img
+              src={passport}
+              alt="Ravi Shankar Vats"
+              className="w-full h-full object-cover rounded-full border-2 border-white"
+            />
+          </div>
+          <span className="hidden sm:inline text-base font-semibold">Ravi Shankar Vats</span>
+        </a>
+
+        {/* Center: Nav */}
+        <nav className="flex items-center gap-6 text-sm font-semibold">
+          <a href="/projects" className="text-gray-700 hover:text-gray-900">My Projects</a>
+          <a href="/blogs" className="text-gray-700 hover:text-gray-900">My Blogs</a>
+        </nav>
+
+        {/* Right: Social + Resume */}
+        <div className="flex items-center gap-3">
           <a
             href="https://x.com/ravisvats"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-cyan-500 hover:text-cyan-700 text-4xl transition"
+            className="text-cyan-500 hover:text-cyan-700 text-2xl transition"
             aria-label="Twitter"
           >
             <FaTwitter />
@@ -21,66 +38,51 @@ const Intro = () => {
             href="https://www.linkedin.com/in/ravivats/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-800 hover:text-blue-900 text-4xl transition"
+            className="text-blue-800 hover:text-blue-900 text-2xl transition"
             aria-label="LinkedIn"
           >
             <FaLinkedin />
           </a>
           <a
             href="mailto:ravisvats@gmail.com"
-            className="text-red-500 hover:text-red-700 text-4xl transition"
+            className="text-red-500 hover:text-red-700 text-2xl transition"
             aria-label="Email"
           >
             <FaEnvelope />
           </a>
           <a
-            href="https://wa.me/910000000000"
+            href="https://wa.me/918875603044"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-green-600 hover:text-green-800 text-4xl transition"
+            className="text-green-600 hover:text-green-800 text-2xl transition"
             aria-label="WhatsApp"
           >
             <FaWhatsapp />
           </a>
-        </div>
-        <h1 className="text-3xl font-bold leading-tight">
-          Hi <span role="img" aria-label="wave">👋</span>,<br />
-          My name is <span className="text-blue-500">Ravi Shankar Vats</span><br />
-          <span className="text-gray-800">I build things for the web</span>
-        </h1>
-        <div className="mt-6 flex gap-4">
-          {/* Updated Blog Button - Opens in new tab */}
           <a
-            href="/blogs"
+            href="/resume"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-white text-gray-900 rounded hover:bg-gray-100 transition border border-gray-300"
+            className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100 text-blue-800 border border-blue-200 hover:bg-blue-200 hover:shadow-sm text-xs font-semibold transition"
+            aria-label="View Full Resume"
+            title="View Full Resume"
           >
-            My Blogs
+            <span className="leading-none">↗</span>
+            <span>View My Resume</span>
           </a>
-          {/* Updated Projects Button - Opens in new tab */}
           <a
-            href="/projects"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 bg-gray-200 text-gray-900 rounded hover:bg-gray-300 transition"
+            href="/pdfs/resume_ravi_python.pdf"
+            download
+            className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-100 text-green-800 border border-green-200 hover:bg-green-200 hover:shadow-sm text-xs font-semibold transition"
+            aria-label="Download Resume (PDF)"
+            title="Download Resume (PDF)"
           >
-            My Projects
+            <span className="leading-none">⬇︎</span>
+            <span>Download Resume</span>
           </a>
         </div>
       </div>
-
-      {/* Right Section: Image */}
-      <div className="flex-1 flex justify-start mt-10 md:mt-0">
-        <div className="w-44 h-44 rounded-full p-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
-          <img
-            src={passport}
-            alt="Ravi Shankar Vats"
-            className="w-full h-full object-cover rounded-full border-4 border-white"
-          />
-        </div>
-      </div>
-    </section>
+    </header>
   );
 };
 
