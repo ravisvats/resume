@@ -63,6 +63,14 @@ const AuthAppHero = () => {
               Book a Consultation
             </a>
             <a
+              href="https://wa.me/918875603044"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-gray-900 border border-gray-300 font-semibold shadow hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-300"
+            >
+              Connect on Whatsapp
+            </a>
+            <a
               href="/authapp"
               className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-gray-900 border border-gray-300 font-semibold shadow hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-300"
             >
