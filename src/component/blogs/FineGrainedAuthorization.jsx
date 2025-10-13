@@ -207,7 +207,7 @@ const Blog1 = () => {
             ← All Blogs
           </Link>
           <Link 
-            to="/blogs/blog2" 
+            to="/blogs/openfga-zanzibar-use-case" 
             className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2"
           >
             Next Article →

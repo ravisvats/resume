@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 
 const blogs = [
   {
+    title: "OpenFGA & Zanzibar Use Case | How SASSY Moved from RBAC to ReBAC?",
+    description: "Learn how SaaS company SASSY solved access control challenges by adopting Relationship-Based Authorization (ReBAC) using OpenFGA.",
+    image: "/images/sassy_rbac_rebac.png",
+    link: "/blogs/openfga-zanzibar-use-case",
+  },
+  {
     title: "Is RBAC Holding You Back? Zanzibar Fine-Grained Authorization Explained",
     description: "Why RBAC fails at scale and how Zanzibar FGA fixes role explosion with relationship-based access.",
     image: "/images/Zanzibar_fga.jpeg",

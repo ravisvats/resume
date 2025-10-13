@@ -19,6 +19,7 @@ import RBACvsFGA from './component/blogs/RBACvsFGA';
 import FastAPIDeployment from './component/blogs/FastAPIDeployment';
 import ScalableBackendDevelopment from './component/blogs/ScalableBackendDevelopment';
 import ZanzibarFGAExplained from './component/blogs/ZanzibarFGAExplained';
+import OpenFGAZanzibarUseCase from './component/blogs/OpenFGAZanzibarUseCase';
 
 // Import individual project components
 import CommentaryGPT from './component/projects/CommentaryGPT';
@@ -52,6 +53,7 @@ function App() {
             <Route path="/blogs/fastapi-deployment" element={<FastAPIDeployment />} />
             <Route path="/blogs/scalable-backend-development" element={<ScalableBackendDevelopment />} />
             <Route path="/blogs/zanzibar-fga-explained" element={<ZanzibarFGAExplained />} />
+            <Route path="/blogs/openfga-zanzibar-use-case" element={<OpenFGAZanzibarUseCase />} />
             
             {/* Individual project routes */}
             <Route path="/projects/commentarygpt" element={<CommentaryGPT />} />

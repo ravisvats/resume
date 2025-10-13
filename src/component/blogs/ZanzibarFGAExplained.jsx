@@ -180,6 +180,16 @@ course:5678#instructor@anita`}</pre>
             </div>
           </div>
         </div>
+
+        {/* Navigation */}
+        <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
+          <Link to="/blogs/scalable-backend-development" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2">
+            ← Previous Article
+          </Link>
+          <Link to="/blogs/openfga-zanzibar-use-case" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2">
+            Next Article →
+          </Link>
+        </div>
       </article>
     </div>
   );

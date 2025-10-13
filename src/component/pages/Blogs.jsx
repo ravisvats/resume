@@ -7,6 +7,20 @@ const Blog = () => {
   // Real blog posts data matching our individual blog pages
   const blogPosts = [
     {
+      id: 8,
+      title: "OpenFGA & Zanzibar Use Case | How SASSY Moved from RBAC to ReBAC?",
+      excerpt: "Learn how SaaS company SASSY solved access control challenges by adopting Relationship-Based Authorization (ReBAC) using OpenFGA.",
+      date: "2024-01-15",
+      readTime: "12 min read",
+      tags: ["OpenFGA", "Zanzibar", "ReBAC", "SaaS"],
+      views: 0,
+      likes: 0,
+      isPopular: true,
+      isRecent: true,
+      link: "/blogs/openfga-zanzibar-use-case",
+      image: "/images/Zanzibar_fga.jpeg"
+    },
+    {
       id: 7,
       title: "Is RBAC Holding You Back? Zanzibar Fine-Grained Authorization Explained",
       excerpt: "Why RBAC fails at scale and how Zanzibar FGA fixes role explosion with relationship-based access.",
