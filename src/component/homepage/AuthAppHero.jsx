@@ -18,9 +18,6 @@ const AuthAppHero = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-purple-50" />
         <div className="relative px-8 py-14">
           <div className="text-center mb-8">
-            <p className="inline-block uppercase tracking-wider text-sm md:text-base font-extrabold text-indigo-800 bg-indigo-100 border border-indigo-200 rounded-full px-4 py-1 shadow-sm">
-              My Services
-            </p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mt-2">
               AuthApp™ — Continuous Fine-Grained Authorization as a Service
             </h2>

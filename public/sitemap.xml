@@ -51,6 +51,24 @@
     <priority>0.2</priority>
   </url>
 
+  <url>
+    <loc>https://ravisvats.com/careers</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ravisvats.com/rebac</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ravisvats.com/rbac</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog posts -->
   <url>
     <loc>https://ravisvats.com/blogs/fine-grained-authorization</loc>
@@ -84,6 +102,11 @@
   </url>
   <url>
     <loc>https://ravisvats.com/blogs/zanzibar-fga-explained</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ravisvats.com/blogs/openfga-zanzibar-use-case</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -62,10 +62,14 @@ const Blogs = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.map((blog, idx) => (
             <div key={idx} className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
-              <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover" />
+              <Link to={blog.link} className="block">
+                <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300 cursor-pointer" />
+              </Link>
 
               <div className="p-5 space-y-2">
-                <h3 className="text-xl font-semibold text-gray-900">{blog.title}</h3>
+                <Link to={blog.link} className="block">
+                  <h3 className="text-xl font-semibold text-gray-900 hover:text-indigo-600 transition-colors cursor-pointer">{blog.title}</h3>
+                </Link>
                 <p className="text-gray-600 text-sm">{blog.description}</p>
               </div>
 

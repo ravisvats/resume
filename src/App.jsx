@@ -10,6 +10,10 @@ import AuthAppPage from './component/pages/AuthApp';
 import Footer from './component/common/Footer';
 import Privacy from './component/pages/Privacy';
 import Terms from './component/pages/Terms';
+import Careers from './component/pages/Careers';
+import ReBAC from './component/pages/ReBAC';
+import RBAC from './component/pages/RBAC';
+import ABAC from './component/pages/ABAC';
 
 // Import individual blog components
 import FineGrainedAuthorization from './component/blogs/FineGrainedAuthorization';
@@ -44,6 +48,10 @@ function App() {
             {/* Policy pages */}
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/rebac" element={<ReBAC />} />
+            <Route path="/rbac" element={<RBAC />} />
+            <Route path="/abac" element={<ABAC />} />
             
             {/* Individual blog routes */}
             <Route path="/blogs/fine-grained-authorization" element={<FineGrainedAuthorization />} />

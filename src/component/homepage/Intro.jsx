@@ -1,5 +1,6 @@
 import passport from "../../assets/ravi_passport.jpeg";
 import { FaTwitter, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Intro = () => {
   return (
@@ -18,7 +19,50 @@ const Intro = () => {
         </a>
 
         {/* Center: Nav */}
-        <nav className="flex items-center gap-6 text-sm font-semibold">
+        <nav className="flex items-center gap-6 text-sm font-semibold relative">
+          {/* Solutions Dropdown */}
+          <div className="relative group">
+            <a href="#" className="text-gray-700 hover:text-gray-900 flex items-center gap-1">
+              Solutions
+              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+            <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="py-2">
+                <Link to="/abac" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                  ABAC
+                </Link>
+                <Link to="/rbac" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                  RBAC
+                </Link>
+                <Link to="/rebac" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                  ReBAC
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Company Dropdown */}
+          <div className="relative group">
+            <a href="#" className="text-gray-700 hover:text-gray-900 flex items-center gap-1">
+              Company
+              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+            <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="py-2">
+                <Link to="/careers" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                  Careers
+                </Link>
+                <a href="/authapp" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                  About
+                </a>
+              </div>
+            </div>
+          </div>
+
           <a href="/projects" className="text-gray-700 hover:text-gray-900">My Projects</a>
           <a href="/blogs" className="text-gray-700 hover:text-gray-900">My Blogs</a>
         </nav>

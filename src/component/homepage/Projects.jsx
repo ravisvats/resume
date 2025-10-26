@@ -3,12 +3,6 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
-    title: "CommentaryGPT : Live Sports updates",
-    description: "Trained on sports commentary transcripts to generate live-style commentary.",
-    image: "/images/commentarygpt_app.jpeg",
-    link: "/projects/commentarygpt",
-  },
-  {
     title: "User authorization System Using FGA",
     description: "A fine-grained access control system that dynamically manages user permissions based on roles, relationships, and contextual attributes using Google Zanzibar-style FGA (Fine-Grained Authorization).",
     image: "/images/fga.jpeg",
@@ -19,6 +13,12 @@ const projects = [
     description: "Identity and Access Management (IAM) platform that provides SSO, SCIM provisioning, and Fine-Grained Authorization via REST APIs and event-driven architecture",
     image: "/images/authpilot2.png",
     link: "/projects/authpilot",
+  },
+  {
+    title: "CommentaryGPT : Live Sports updates",
+    description: "Trained on sports commentary transcripts to generate live-style commentary.",
+    image: "/images/commentarygpt_app.jpeg",
+    link: "/projects/commentarygpt",
   }
 ];
 
@@ -32,10 +32,14 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <div key={idx} className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+              <Link to={project.link} className="block">
+                <img src={project.image} alt={project.title} className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300 cursor-pointer" />
+              </Link>
 
               <div className="p-5 space-y-2">
-                <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
+                <Link to={project.link} className="block">
+                  <h3 className="text-xl font-semibold text-gray-900 hover:text-indigo-600 transition-colors cursor-pointer">{project.title}</h3>
+                </Link>
                 <p className="text-gray-600 text-sm">{project.description}</p>
               </div>
 
