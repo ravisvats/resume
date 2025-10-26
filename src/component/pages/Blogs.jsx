@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import passport from "../../assets/ravi_passport.jpeg";
 
 const Blog = () => {
   const [activeSection, setActiveSection] = useState('All');
@@ -145,12 +146,21 @@ const Blog = () => {
       <div className="bg-white shadow-sm border-b sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-4xl font-bold text-gray-900">My Blogs</h1>
-              <p className="text-gray-600 mt-2 text-lg">Thoughts, tutorials, and insights on web development</p>
+            <div className='flex items-center'>
+              <a href="/">
+                <img
+                  src={passport}
+                  alt="Ravi Shankar Vats"
+                  className="w-[44px] h-[44px] object-cover rounded-full border-2 mr-2"
+                />
+              </a>
+              <div>
+                <h1 className="text-4xl font-bold text-gray-900">My Blogs</h1>
+                <p className="text-gray-600 mt-2 text-lg">Thoughts, tutorials, and insights on web development</p>
+              </div>
             </div>
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className="px-6 py-3 bg-blue-600 !text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
               ← Back to Home
@@ -173,7 +183,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-xl p-6 text-white">
             <div className="flex items-center justify-between">
               <div>
@@ -185,7 +195,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl p-6 text-white">
             <div className="flex items-center justify-between">
               <div>
@@ -209,15 +219,14 @@ const Blog = () => {
                 <button
                   key={section}
                   onClick={() => setActiveSection(section)}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
-                    activeSection === section
-                      ? 'bg-blue-600 text-white shadow-lg transform scale-105'
-                      : 'bg-white text-[#777] hover:bg-gray-50 border border-gray-200 hover:border-gray-300'
-                  }`}
+                  className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${activeSection === section
+                    ? 'bg-blue-600 text-white shadow-lg transform scale-105'
+                    : 'bg-white text-[#777] hover:bg-gray-50 border border-gray-200 hover:border-gray-300'
+                    }`}
                 >
                   {section}
                   <span className="ml-2 text-xs opacity-75">
-                    ({section === 'All' ? blogPosts.length : 
+                    ({section === 'All' ? blogPosts.length :
                       section === 'Popular' ? popularPosts.length : recentPosts.length})
                   </span>
                 </button>
@@ -231,7 +240,7 @@ const Blog = () => {
                   <h2 className="text-2xl font-bold text-gray-900">🌟 Featured Post</h2>
                   <div className="h-px bg-gradient-to-r from-gray-300 to-transparent flex-1"></div>
                 </div>
-                
+
                 <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 border border-blue-100">
                   <div className="grid md:grid-cols-3 gap-8 items-center">
                     <div className="md:col-span-2">
@@ -241,38 +250,38 @@ const Blog = () => {
                         </span>
                         <span className="text-gray-500 text-sm">{popularPosts[0].views.toLocaleString()} views</span>
                       </div>
-                      
+
                       <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight">
                         {popularPosts[0].title}
                       </h3>
-                      
+
                       <p className="text-gray-600 leading-relaxed mb-6">
                         {popularPosts[0].excerpt}
                       </p>
-                      
+
                       <div className="flex items-center gap-4 text-sm text-gray-500 mb-6">
-                        <span>{new Date(popularPosts[0].date).toLocaleDateString('en-US', { 
-                          year: 'numeric', 
-                          month: 'long', 
-                          day: 'numeric' 
+                        <span>{new Date(popularPosts[0].date).toLocaleDateString('en-US', {
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric'
                         })}</span>
                         <span>•</span>
                         <span>{popularPosts[0].readTime}</span>
                         <span>•</span>
                         <span>❤️ {popularPosts[0].likes}</span>
                       </div>
-                      
-                      <Link 
+
+                      <Link
                         to={popularPosts[0].link}
                         className="bg-gradient-to-r from-blue-600 to-purple-600 !text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium inline-block"
                       >
                         Read Full Article →
                       </Link>
                     </div>
-                    
+
                     <div className="hidden md:block">
-                      <img 
-                        src={popularPosts[0].image} 
+                      <img
+                        src={popularPosts[0].image}
                         alt={popularPosts[0].title}
                         className="w-full h-48 object-cover rounded-xl"
                       />
@@ -286,15 +295,15 @@ const Blog = () => {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <h2 className="text-2xl font-bold text-gray-900">
-                  {activeSection === 'All' ? '📚 All Posts' : 
-                   activeSection === 'Popular' ? '🔥 Popular Posts' : '🆕 Recent Posts'}
+                  {activeSection === 'All' ? '📚 All Posts' :
+                    activeSection === 'Popular' ? '🔥 Popular Posts' : '🆕 Recent Posts'}
                 </h2>
                 <div className="h-px bg-gradient-to-r from-gray-300 to-transparent flex-1"></div>
               </div>
-              
+
               <div className="space-y-6">
                 {getFilteredPosts().map((post, index) => (
-                  <article 
+                  <article
                     key={post.id}
                     className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 p-6 border border-gray-100 group"
                   >
@@ -313,21 +322,21 @@ const Blog = () => {
                       </div>
                       <span className="text-gray-400 text-sm">{post.views.toLocaleString()} views</span>
                     </div>
-                    
+
                     <Link to={post.link} className="block">
                       <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors cursor-pointer">
                         {post.title}
                       </h3>
                     </Link>
-                    
+
                     <p className="text-gray-600 leading-relaxed mb-4">
                       {post.excerpt}
                     </p>
-                    
+
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center space-x-3 text-sm text-gray-500">
-                        <span>{new Date(post.date).toLocaleDateString('en-US', { 
-                          month: 'short', 
+                        <span>{new Date(post.date).toLocaleDateString('en-US', {
+                          month: 'short',
                           day: 'numeric',
                           year: 'numeric'
                         })}</span>
@@ -339,11 +348,11 @@ const Blog = () => {
                         </span>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center justify-between">
                       <div className="flex flex-wrap gap-2">
                         {post.tags.slice(0, 3).map((tag, tagIndex) => (
-                          <span 
+                          <span
                             key={tagIndex}
                             className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full hover:bg-gray-200 transition-colors cursor-pointer"
                           >
@@ -351,8 +360,8 @@ const Blog = () => {
                           </span>
                         ))}
                       </div>
-                      
-                      <Link 
+
+                      <Link
                         to={post.link}
                         className="text-blue-600 hover:text-blue-800 font-semibold transition-colors group-hover:translate-x-1 transform duration-200"
                       >
@@ -389,7 +398,7 @@ const Blog = () => {
               <h3 className="text-lg font-bold text-gray-900 mb-4">🏷️ Popular Tags</h3>
               <div className="flex flex-wrap gap-2">
                 {allTags.map((tag, index) => (
-                  <span 
+                  <span
                     key={index}
                     className="px-3 py-2 bg-blue-50 text-blue-700 text-sm rounded-lg hover:bg-blue-100 transition-colors cursor-pointer border border-blue-100"
                   >
