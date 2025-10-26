@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import passport from "../../assets/ravi_passport.jpeg";
 
 const Resume = () => {
   const skills = {
@@ -58,12 +59,21 @@ const Resume = () => {
       <div className="bg-white shadow-sm border-b sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-6 py-6">
           <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-4xl font-bold text-gray-900">My Resume</h1>
-              <p className="text-gray-600 mt-2 text-lg">Complete professional profile and experience</p>
+            <div className='flex items-center'>
+              <a href="/">
+                <img
+                  src={passport}
+                  alt="Ravi Shankar Vats"
+                  className="w-[44px] h-[44px] object-cover rounded-full border-2 mr-2"
+                />
+              </a>
+              <div>
+                <h1 className="text-4xl font-bold text-gray-900">My Resume</h1>
+                <p className="text-gray-600 mt-2 text-lg">Complete professional profile and experience</p>
+              </div>
             </div>
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className="px-6 py-3 bg-blue-600 !text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
               ← Back to Home
@@ -78,9 +88,9 @@ const Resume = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <img 
-                  src="/images/ravi_passport.jpeg" 
-                  alt="Ravi Shankar Vats" 
+                <img
+                  src="/images/ravi_passport.jpeg"
+                  alt="Ravi Shankar Vats"
                   className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg"
                 />
                 <div>
@@ -88,7 +98,7 @@ const Resume = () => {
                   <p className="text-blue-600 font-medium text-lg">Software Solution Architect & Technical Lead</p>
                 </div>
               </div>
-              
+
               <div className="space-y-3 text-gray-700">
                 <div className="flex items-center gap-3">
                   <span className="text-blue-600 text-lg">📍</span>
@@ -108,10 +118,10 @@ const Resume = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-blue-600 text-lg">💼</span>
-                  <a 
-                    href="https://linkedin.com/in/ravisvats" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://linkedin.com/in/ravisvats"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 transition-colors font-medium"
                   >
                     LinkedIn Profile
@@ -119,16 +129,16 @@ const Resume = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="flex flex-col justify-center items-center md:items-end gap-4">
               <div className="text-center md:text-right">
                 <div className="text-3xl font-bold text-blue-600">8+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
               <button class="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors font-medium flex items-center gap-3 shadow-lg border border-blue-600">
-  <span>📄</span>
-  Download PDF Resume
-</button>
+                <span>📄</span>
+                Download PDF Resume
+              </button>
             </div>
           </div>
         </div>
@@ -140,10 +150,10 @@ const Resume = () => {
             Professional Summary
           </h3>
           <p className="text-gray-700 leading-relaxed text-lg">
-            Innovative Software Solution Architect and Technical Lead with in-depth understanding of 
-            software development and system design illustrated over 8+ years of experience in similar 
-            roles at fast paced startups such as Delhivery, GoMechanic, Zenarate. Expertise in building 
-            scalable microservices, implementing fine-grained authorization systems, and leading 
+            Innovative Software Solution Architect and Technical Lead with in-depth understanding of
+            software development and system design illustrated over 8+ years of experience in similar
+            roles at fast paced startups such as Delhivery, GoMechanic, Zenarate. Expertise in building
+            scalable microservices, implementing fine-grained authorization systems, and leading
             technical teams in high-growth environments.
           </p>
         </div>
@@ -160,7 +170,7 @@ const Resume = () => {
                 <h4 className="font-bold text-gray-800 mb-4 text-lg">{category}:</h4>
                 <div className="flex flex-wrap gap-2">
                   {items.map((skill, skillIndex) => (
-                    <span 
+                    <span
                       key={skillIndex}
                       className="bg-blue-100 text-blue-800 px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors"
                     >
@@ -186,14 +196,14 @@ const Resume = () => {
                 {index < experiences.length - 1 && (
                   <div className="absolute left-6 top-16 w-0.5 h-full bg-blue-200"></div>
                 )}
-                
+
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
                       {index + 1}
                     </div>
                   </div>
-                  
+
                   <div className="flex-1 bg-gray-50 rounded-lg p-6">
                     <div className="flex flex-wrap justify-between items-start mb-4">
                       <div>
@@ -204,7 +214,7 @@ const Resume = () => {
                         {exp.duration}
                       </span>
                     </div>
-                    
+
                     <ul className="space-y-3">
                       {exp.achievements.map((achievement, achIndex) => (
                         <li key={achIndex} className="flex items-start gap-3 text-gray-700">
@@ -270,15 +280,15 @@ const Resume = () => {
             I'm always open to discussing new opportunities and interesting projects.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a 
-              href="mailto:ravisvats@gmail.com" 
+            <a
+              href="mailto:ravisvats@gmail.com"
               className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
             >
               📧 Get In Touch
             </a>
-            <a 
-              href="https://linkedin.com/in/ravisvats" 
-              target="_blank" 
+            <a
+              href="https://linkedin.com/in/ravisvats"
+              target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition-colors"
             >

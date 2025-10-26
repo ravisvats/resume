@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import passport from "../../assets/ravi_passport.jpeg";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -40,8 +41,8 @@ const Projects = () => {
 
   const categories = ['All', 'Full-Stack', 'Backend', 'AI/ML'];
 
-  const filteredProjects = selectedCategory === 'All' 
-    ? projects 
+  const filteredProjects = selectedCategory === 'All'
+    ? projects
     : projects.filter(project => project.category === selectedCategory);
 
   const featuredProjects = projects.filter(project => project.featured);
@@ -52,12 +53,21 @@ const Projects = () => {
       <div className="bg-white shadow-sm border-b">
         <div className="max-w-6xl mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-3xl font-bold text-gray-900">My Projects</h1>
-              <p className="text-gray-600 mt-2">A showcase of my development work and technical expertise</p>
+            <div className='flex items-center'>
+              <a href="/">
+                <img
+                  src={passport}
+                  alt="Ravi Shankar Vats"
+                  className="w-[44px] h-[44px] object-cover rounded-full border-2 mr-2"
+                />
+              </a>
+              <div>
+                <h1 className="text-3xl font-bold text-gray-900">My Projects</h1>
+                <p className="text-gray-600 mt-2">A showcase of my development work and technical expertise</p>
+              </div>
             </div>
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className="px-4 py-2 bg-blue-600 !text-white rounded-lg hover:bg-blue-700 transition-colors"
             >
               ← Back to Home
@@ -73,13 +83,13 @@ const Projects = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {featuredProjects.map((project) => (
-                <div 
+                <div
                   key={project.id}
                   className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100"
                 >
                   <div className="h-48 relative overflow-hidden">
-                    <img 
-                      src={project.image} 
+                    <img
+                      src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover"
                     />
@@ -89,7 +99,7 @@ const Projects = () => {
                       </span>
                     </div>
                   </div>
-                  
+
                   <div className="p-6">
                     <Link to={project.link} className="block">
                       <h3 className="text-xl font-bold text-gray-900 mb-2 hover:text-blue-600 transition-colors">
@@ -97,10 +107,10 @@ const Projects = () => {
                       </h3>
                     </Link>
                     <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
-                    
+
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.technologies.map((tech, index) => (
-                        <span 
+                        <span
                           key={index}
                           className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
                         >
@@ -108,15 +118,15 @@ const Projects = () => {
                         </span>
                       ))}
                     </div>
-                    
+
                     <div className="flex gap-4">
-                      <Link 
+                      <Link
                         to={project.link}
                         className="flex-1 bg-blue-600 !text-white text-center py-2 rounded-lg hover:bg-blue-700 transition-colors"
                       >
                         View Details
                       </Link>
-                      <a 
+                      <a
                         href="#"
                         className="flex-1 bg-gray-800 !text-white text-center py-2 rounded-lg hover:bg-gray-900 transition-colors"
                       >
@@ -136,15 +146,14 @@ const Projects = () => {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 rounded-lg transition-colors ${
-                selectedCategory === category
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-white text-[#777] hover:bg-gray-50 border border-gray-200'
-              }`}
+              className={`px-4 py-2 rounded-lg transition-colors ${selectedCategory === category
+                ? 'bg-blue-600 text-white'
+                : 'bg-white text-[#777] hover:bg-gray-50 border border-gray-200'
+                }`}
             >
               {category}
               <span className="ml-2 text-xs opacity-75">
-                ({category === 'All' ? projects.length : 
+                ({category === 'All' ? projects.length :
                   projects.filter(p => p.category === category).length})
               </span>
             </button>
@@ -154,13 +163,13 @@ const Projects = () => {
         {/* All Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (
-            <div 
+            <div
               key={project.id}
               className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-100"
             >
               <div className="h-40 relative overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
@@ -170,7 +179,7 @@ const Projects = () => {
                   </span>
                 </div>
               </div>
-              
+
               <div className="p-5">
                 <Link to={project.link} className="block">
                   <h3 className="text-lg font-bold text-gray-900 mb-2 hover:text-blue-600 transition-colors">
@@ -180,10 +189,10 @@ const Projects = () => {
                 <p className="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-3">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-1 mb-4">
                   {project.technologies.slice(0, 3).map((tech, index) => (
-                    <span 
+                    <span
                       key={index}
                       className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded"
                     >
@@ -196,15 +205,15 @@ const Projects = () => {
                     </span>
                   )}
                 </div>
-                
+
                 <div className="flex gap-2">
-                  <Link 
+                  <Link
                     to={project.link}
                     className="flex-1 bg-blue-600 !text-white text-center py-2 text-sm rounded hover:bg-blue-700 transition-colors"
                   >
                     View Details
                   </Link>
-                  <a 
+                  <a
                     href="#"
                     className="flex-1 bg-gray-800 !text-white text-center py-2 text-sm rounded hover:bg-gray-900 transition-colors"
                   >
