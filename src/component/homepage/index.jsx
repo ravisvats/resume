@@ -15,14 +15,13 @@ const Home = () => {
                 <AuthAppHero />
             </div>
             <div className="bg-white shadow">
-                <TechStack />
-            </div>
-            {/* Move projects and blogs to bottom */}
-            <div className="bg-white shadow">
                 <Projects />
             </div>
             <div className="bg-white shadow">
                 <Blogs />
+            </div>
+            <div className="bg-white shadow">
+                <TechStack />
             </div>
         </div>
     );

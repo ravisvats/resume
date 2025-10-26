@@ -29,6 +29,7 @@ import OpenFGAZanzibarUseCase from './component/blogs/OpenFGAZanzibarUseCase';
 import CommentaryGPT from './component/projects/CommentaryGPT';
 import UserAuthorizationSystem from './component/projects/UserAuthorizationSystem';
 import AuthPilot from './component/projects/AuthPilot';
+import FGAUserAuthorization from './component/projects/FGAUserAuthorization';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -67,6 +68,7 @@ function App() {
             <Route path="/projects/commentarygpt" element={<CommentaryGPT />} />
             <Route path="/projects/user-authorization-system" element={<UserAuthorizationSystem />} />
             <Route path="/projects/authpilot" element={<AuthPilot />} />
+            <Route path="/projects/fga-user-authorization" element={<FGAUserAuthorization />} />
           </Routes>
         </main>
         <Footer />

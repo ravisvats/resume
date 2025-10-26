@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
+    title: "Outsourcing Client-Side Setup — FGA User Authorization from Scratch",
+    description: "Complete end-to-end setup of Fine-Grained Authorization (FGA) for a client application, enabling scalable, secure, and compliant user access control.",
+    image: "/images/outsourcing_fga_auth.png",
+    link: "/projects/fga-user-authorization",
+  },
+  {
     title: "User authorization System Using FGA",
     description: "A fine-grained access control system that dynamically manages user permissions based on roles, relationships, and contextual attributes using Google Zanzibar-style FGA (Fine-Grained Authorization).",
     image: "/images/fga.jpeg",

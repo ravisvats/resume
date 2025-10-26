@@ -9,6 +9,16 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "Outsourcing Client-Side Setup — FGA User Authorization from Scratch",
+      description: "Complete end-to-end setup of Fine-Grained Authorization (FGA) for a client application, enabling scalable, secure, and compliant user access control over 3 months.",
+      image: "/images/outsourcing_fga_auth.png",
+      technologies: ["Python", "FastAPI", "AWS Lambda", "PostgreSQL", "Redis", "Kafka", "React", "Tailwind"],
+      category: "Backend",
+      link: "/projects/fga-user-authorization",
+      featured: true
+    },
+    {
+      id: 2,
       title: "CommentaryGPT: Live Sports Updates",
       description: "An AI-powered sports commentary system that generates real-time, engaging commentary for live sports events using advanced natural language processing.",
       image: "/images/commentarygpt_app.jpeg",
@@ -18,7 +28,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 2,
+      id: 3,
       title: "User Authorization System Using FGA",
       description: "A fine-grained access control system that dynamically manages user permissions based on roles, relationships, and contextual attributes using Google Zanzibar-style FGA.",
       image: "/images/fga.jpeg",
@@ -28,14 +38,14 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 3,
+      id: 4,
       title: "AuthPilot – Identity & Access Management",
       description: "Comprehensive Identity and Access Management platform that provides Single Sign-On, SCIM provisioning, and Fine-Grained Authorization via REST APIs.",
       image: "/images/authpilot2.png",
       technologies: ["Node.js", "React", "PostgreSQL", "Kafka", "Docker"],
       category: "Full-Stack",
       link: "/projects/authpilot",
-      featured: true
+      featured: false
     }
   ];
 
