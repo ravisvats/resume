@@ -62,7 +62,7 @@ const Projects = () => {
                 />
               </a>
               <div>
-                <h1 className="text-3xl font-bold text-gray-900">My Projects</h1>
+                <h1 className="text-3xl font-bold text-gray-900">Projects</h1>
                 <p className="text-gray-600 mt-2">A showcase of my development work and technical expertise</p>
               </div>
             </div>

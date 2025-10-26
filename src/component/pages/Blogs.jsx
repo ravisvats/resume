@@ -155,7 +155,7 @@ const Blog = () => {
                 />
               </a>
               <div>
-                <h1 className="text-4xl font-bold text-gray-900">My Blogs</h1>
+                <h1 className="text-4xl font-bold text-gray-900">Blogs</h1>
                 <p className="text-gray-600 mt-2 text-lg">Thoughts, tutorials, and insights on web development</p>
               </div>
             </div>

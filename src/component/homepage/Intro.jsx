@@ -63,8 +63,8 @@ const Intro = () => {
             </div>
           </div>
 
-          <a href="/projects" className="text-gray-700 hover:text-gray-900">My Projects</a>
-          <a href="/blogs" className="text-gray-700 hover:text-gray-900">My Blogs</a>
+          <a href="/projects" className="text-gray-700 hover:text-gray-900">Projects</a>
+          <a href="/blogs" className="text-gray-700 hover:text-gray-900">Blogs</a>
         </nav>
 
         {/* Right: Social + Resume */}
