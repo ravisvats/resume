@@ -7,6 +7,9 @@ import Blogs from './component/pages/Blogs'; // New blog component
 import Projects from './component/pages/Projects'; // New projects component
 import Resume from './component/pages/Resume'; // New resume page
 import AuthAppPage from './component/pages/AuthApp';
+import OurServices from './component/pages/OurServices';
+import ServicePackages from './component/pages/ServicePackages';
+import HowMigrationWorks from './component/pages/HowMigrationWorks';
 import Footer from './component/common/Footer';
 import Privacy from './component/pages/Privacy';
 import Terms from './component/pages/Terms';
@@ -45,6 +48,9 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/authapp" element={<AuthAppPage />} />
+            <Route path="/services" element={<OurServices />} />
+            <Route path="/service-packages" element={<ServicePackages />} />
+            <Route path="/how-migration-works" element={<HowMigrationWorks />} />
 
             {/* Policy pages */}
             <Route path="/privacy" element={<Privacy />} />

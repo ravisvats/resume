@@ -20,10 +20,10 @@ const Intro = () => {
 
         {/* Center: Nav */}
         <nav className="flex items-center gap-6 text-sm font-semibold relative">
-          {/* Solutions Dropdown */}
+          {/* Authorization Models Dropdown */}
           <div className="relative group">
             <a href="#" className="text-gray-700 hover:text-gray-900 flex items-center gap-1">
-              Solutions
+              Models
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
               </svg>
@@ -59,6 +59,12 @@ const Intro = () => {
                 <a href="/authapp" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
                   About
                 </a>
+                <Link to="/service-packages" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                  Service Plans
+                </Link>
+                <Link to="/how-migration-works" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                  Migration Process
+                </Link>
               </div>
             </div>
           </div>
@@ -102,27 +108,6 @@ const Intro = () => {
             aria-label="WhatsApp"
           >
             <FaWhatsapp />
-          </a>
-          <a
-            href="/resume"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100 text-blue-800 border border-blue-200 hover:bg-blue-200 hover:shadow-sm text-xs font-semibold transition"
-            aria-label="View Full Resume"
-            title="View Full Resume"
-          >
-            <span className="leading-none">↗</span>
-            <span>View My Resume</span>
-          </a>
-          <a
-            href="/pdfs/resume_ravi_python.pdf"
-            download
-            className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-100 text-green-800 border border-green-200 hover:bg-green-200 hover:shadow-sm text-xs font-semibold transition"
-            aria-label="Download Resume (PDF)"
-            title="Download Resume (PDF)"
-          >
-            <span className="leading-none">⬇︎</span>
-            <span>Download Resume</span>
           </a>
         </div>
       </div>
