@@ -46,7 +46,7 @@ const AuthStreamSlider = () => {
             href="https://calendly.com/vatsjay759/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-lg"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-indigo-600 !text-white font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-lg"
           >
             Book a Free Assessment
           </a>
@@ -137,7 +137,7 @@ const AuthStreamSlider = () => {
         <div className="text-center">
           <a
             href="/service-packages"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-lg"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-indigo-600 !text-white font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-lg"
           >
             Explore Service Packages
             <FiArrowRight className="ml-2 h-5 w-5" />
@@ -194,7 +194,7 @@ const AuthStreamSlider = () => {
         <div className="text-center">
           <a
             href="/how-migration-works"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-emerald-600 text-white font-semibold shadow-lg hover:bg-emerald-700 transition-colors text-lg"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-emerald-600 !text-white font-semibold shadow-lg hover:bg-emerald-700 transition-colors text-lg"
           >
             See How Migration Works
             <FiArrowRight className="ml-2 h-5 w-5" />
@@ -253,7 +253,7 @@ const AuthStreamSlider = () => {
             href="https://calendly.com/vatsjay759/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-amber-600 text-white font-semibold shadow-lg hover:bg-amber-700 transition-colors text-lg"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-amber-600 !text-white font-semibold shadow-lg hover:bg-amber-700 transition-colors text-lg"
           >
             Request Compliance Demo
             <FiArrowRight className="ml-2 h-5 w-5" />
@@ -310,7 +310,7 @@ const AuthStreamSlider = () => {
             href="https://calendly.com/vatsjay759/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-purple-600 text-white font-semibold shadow-lg hover:bg-purple-700 transition-colors text-lg"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-purple-600 !text-white font-semibold shadow-lg hover:bg-purple-700 transition-colors text-lg"
           >
             Talk to an Expert
             <FiArrowRight className="ml-2 h-5 w-5" />
@@ -335,7 +335,7 @@ const AuthStreamSlider = () => {
             href="https://calendly.com/vatsjay759/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-lg"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-indigo-600 !text-white font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-lg"
           >
             Start Free Assessment
           </a>
@@ -376,14 +376,14 @@ const AuthStreamSlider = () => {
         className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all"
         aria-label="Previous slide"
       >
-        <FiChevronLeft className="h-6 w-6 text-gray-700" />
+        <FiChevronLeft className="h-6 w-6 text-white" />
       </button>
       <button
         onClick={nextSlide}
         className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all"
         aria-label="Next slide"
       >
-        <FiChevronRight className="h-6 w-6 text-gray-700" />
+        <FiChevronRight className="h-6 w-6 text-white" />
       </button>
 
       {/* Dots Indicator */}

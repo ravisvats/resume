@@ -60,7 +60,7 @@ const Projects = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Header */}
-      <div className="bg-white shadow-sm border-b">
+      {/* <div className="bg-white shadow-sm border-b">
         <div className="max-w-6xl mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className='flex items-center'>
@@ -84,7 +84,7 @@ const Projects = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Featured Projects */}

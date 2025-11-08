@@ -5,14 +5,14 @@ const Blog4 = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
       {/* Header */}
-      <div className="bg-white shadow-sm border-b">
+      {/* <div className="bg-white shadow-sm border-b">
         <div className="max-w-4xl mx-auto px-6 py-6">
           <div className="flex items-center justify-between">
             <Link to="/blogs" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2">← Back to Blogs</Link>
             <Link to="/" className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors">Home</Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Blog Content */}
       <article className="max-w-4xl mx-auto px-6 py-12">

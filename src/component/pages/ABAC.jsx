@@ -5,7 +5,7 @@ const ABAC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
       {/* Header */}
-      <div className="bg-white shadow-sm border-b">
+      {/* <div className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex items-center justify-between">
             <Link to="/" className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors">
@@ -13,7 +13,7 @@ const ABAC = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-20">
@@ -27,7 +27,7 @@ const ABAC = () => {
           <div className="flex justify-center gap-4">
             <a
               href="mailto:ravisvats@gmail.com"
-              className="inline-block px-8 py-4 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+              className="inline-block px-8 py-4 bg-blue-600 !text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
             >
               Start Now
             </a>
@@ -55,12 +55,12 @@ const ABAC = () => {
               Scale Seamlessly
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Move from RBAC to ABAC with little effort as your permissions needs grow 
+              Move from RBAC to ABAC with little effort as your permissions needs grow
               and become more complex and contextual
             </p>
             <a
               href="mailto:ravisvats@gmail.com"
-              className="inline-block mt-8 px-8 py-4 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
+              className="inline-block mt-8 px-8 py-4 bg-blue-600 !text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               Start now
             </a>
@@ -72,12 +72,12 @@ const ABAC = () => {
               <div className="text-5xl mb-4 text-center">🔀</div>
               <h3 className="font-bold text-gray-900 mb-4 text-xl">Gain Flexibility</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Go beyond RBAC with very little effort through auto-generated ABAC code 
+                Go beyond RBAC with very little effort through auto-generated ABAC code
                 you can manage directly from your Git repo.
               </p>
               <a
                 href="mailto:ravisvats@gmail.com"
-                className="inline-block w-full text-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+                className="inline-block w-full text-center px-4 py-2 bg-blue-600 !text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold"
               >
                 Start now →
               </a>
@@ -88,12 +88,12 @@ const ABAC = () => {
               <div className="text-5xl mb-4 text-center">⏱️</div>
               <h3 className="font-bold text-gray-900 mb-4 text-xl">Save Significant Time</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Save time, effort and complexity versus building and maintaining yourself 
+                Save time, effort and complexity versus building and maintaining yourself
                 while empowering other stakeholders with no code interfaces.
               </p>
               <a
                 href="mailto:ravisvats@gmail.com"
-                className="inline-block w-full text-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold"
+                className="inline-block w-full text-center px-4 py-2 bg-green-600 !text-white rounded-lg hover:bg-green-700 transition-colors font-semibold"
               >
                 Start now →
               </a>
@@ -104,12 +104,12 @@ const ABAC = () => {
               <div className="text-5xl mb-4 text-center">🎯</div>
               <h3 className="font-bold text-gray-900 mb-4 text-xl">Contextual Control</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Make access decisions based on user attributes, resource properties, 
+                Make access decisions based on user attributes, resource properties,
                 and environmental context - all configurable without code changes.
               </p>
               <a
                 href="mailto:ravisvats@gmail.com"
-                className="inline-block w-full text-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-semibold"
+                className="inline-block w-full text-center px-4 py-2 bg-purple-600 !text-white rounded-lg hover:bg-purple-700 transition-colors font-semibold"
               >
                 Start now →
               </a>
@@ -127,26 +127,26 @@ const ABAC = () => {
                 What is ABAC?
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Attribute-Based Access Control (ABAC) allows you to define access policies 
+                Attribute-Based Access Control (ABAC) allows you to define access policies
                 based on attributes of users, resources, actions, and environmental context.
               </p>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Unlike RBAC which assigns fixed roles, ABAC evaluates multiple attributes 
+                Unlike RBAC which assigns fixed roles, ABAC evaluates multiple attributes
                 to make dynamic access decisions, giving you fine-grained control over permissions.
               </p>
-              <Link 
-                to="/blogs/rbac-vs-fga" 
-                className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              <Link
+                to="/blogs/rbac-vs-fga"
+                className="inline-block px-6 py-3 bg-blue-600 !text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
               >
                 Learn More →
               </Link>
             </div>
-            
-            <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+
+            <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 max-w-full overflow-scroll">
               <h3 className="font-bold text-gray-900 mb-4 text-lg">Example ABAC Policy</h3>
-              <div className="bg-gray-900 rounded-lg p-4">
+              <div className="bg-gray-900 rounded-lg p-4 max-w-full overflow-scroll">
                 <pre className="text-green-400 text-sm">
-{`# Allow if user is from IP 192.168.1.* 
+                  {`# Allow if user is from IP 192.168.1.* 
 # AND user.department == "Sales"
 # AND resource.type == "Invoice"
 # AND time.hour >= 9 AND time.hour <= 17
@@ -241,14 +241,14 @@ allow {
             Ready to implement ABAC?
           </h2>
           <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto">
-            Start with simple policies and grow to complex attribute-based authorization 
+            Start with simple policies and grow to complex attribute-based authorization
             without rewriting your application
           </p>
-          
+
           <div className="space-y-4">
             <a
               href="mailto:ravisvats@gmail.com"
-              className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors shadow-xl"
+              className="inline-block px-8 py-4 !bg-white text-blue-600 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors shadow-xl"
             >
               Get Started Now
             </a>

@@ -1,8 +1,12 @@
+import { useState } from "react";
 import passport from "../../assets/ravi_passport.jpeg";
 import { FaTwitter, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import MobileNav from "../common/MobileNav";
 
 const Intro = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
     <header className="w-full bg-white text-gray-900 px-4 md:px-6 py-3 shadow-sm rounded">
       <div className="flex items-center justify-between gap-4">
@@ -18,60 +22,62 @@ const Intro = () => {
           <span className="hidden sm:inline text-base font-semibold">Ravi Shankar Vats</span>
         </a>
 
-        {/* Center: Nav */}
-        <nav className="flex items-center gap-6 text-sm font-semibold relative">
-          {/* Authorization Models Dropdown */}
-          <div className="relative group">
-            <a href="#" className="text-gray-700 hover:text-gray-900 flex items-center gap-1">
-              Models
-              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </a>
-            <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-              <div className="py-2">
-                <Link to="/abac" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
-                  ABAC
-                </Link>
-                <Link to="/rbac" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
-                  RBAC
-                </Link>
-                <Link to="/rebac" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
-                  ReBAC
-                </Link>
+        {/* Center: Nav (desktop) + Hamburger (mobile) */}
+        <div className="flex items-center gap-4">
+          <nav className="hidden md:flex items-center gap-6 text-sm font-semibold relative">
+            {/* Authorization Models Dropdown */}
+            <div className="relative group">
+              <a href="#" className="text-gray-700 hover:text-gray-900 flex items-center gap-1">
+                Models
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </a>
+              <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  <Link to="/abac" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                    ABAC
+                  </Link>
+                  <Link to="/rbac" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                    RBAC
+                  </Link>
+                  <Link to="/rebac" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                    ReBAC
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Company Dropdown */}
-          <div className="relative group">
-            <a href="#" className="text-gray-700 hover:text-gray-900 flex items-center gap-1">
-              Company
-              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </a>
-            <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-              <div className="py-2">
-                <Link to="/careers" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
-                  Careers
-                </Link>
-                <a href="/authapp" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
-                  About
-                </a>
-                <Link to="/service-packages" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
-                  Service Plans
-                </Link>
-                <Link to="/how-migration-works" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
-                  Migration Process
-                </Link>
+            {/* Company Dropdown */}
+            <div className="relative group">
+              <a href="#" className="text-gray-700 hover:text-gray-900 flex items-center gap-1">
+                Company
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </a>
+              <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  <Link to="/careers" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                    Careers
+                  </Link>
+                  <a href="/authapp" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                    About
+                  </a>
+                  <Link to="/service-packages" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                    Service Plans
+                  </Link>
+                  <Link to="/how-migration-works" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                    Migration Process
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
 
-          <a href="/projects" className="text-gray-700 hover:text-gray-900">Projects</a>
-          <a href="/blogs" className="text-gray-700 hover:text-gray-900">Blogs</a>
-        </nav>
+            <a href="/projects" className="text-gray-700 hover:text-gray-900">Projects</a>
+            <a href="/blogs" className="text-gray-700 hover:text-gray-900">Blogs</a>
+          </nav>
+        </div>
 
         {/* Right: Social + Resume */}
         <div className="flex items-center gap-3">
@@ -110,7 +116,22 @@ const Intro = () => {
             <FaWhatsapp />
           </a>
         </div>
+
+        {/* Mobile hamburger */}
+        <button
+          className="md:hidden p-2 rounded-md border border-gray-200 !bg-transparent"
+          onClick={() => setMobileOpen(true)}
+          aria-label="Open menu"
+        >
+          <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
+
+
+      {/* Mobile nav component */}
+      <MobileNav isOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
     </header>
   );
 };

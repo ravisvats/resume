@@ -1,14 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiShield, FiZap, FiRefreshCw, FiCheckCircle, FiUsers, FiLayers, FiSettings, FiGlobe, FiArrowRight, FiCode, FiLock, FiTrendingUp, FiAward, FiClock, FiBarChart } from 'react-icons/fi';
-import Intro from '../homepage/Intro';
 
 const OurServices = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="bg-white shadow-sm sticky top-0 z-30">
-        <Intro />
-      </div>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white py-16 md:py-24">
@@ -514,7 +510,7 @@ const OurServices = () => {
               href="https://calendly.com/vatsjay759/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-indigo-600 font-semibold shadow-lg hover:bg-indigo-50 transition-colors text-lg"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-lg !bg-white text-indigo-600 font-semibold shadow-lg hover:bg-indigo-50 transition-colors text-lg"
             >
               Book a Free Assessment
               <FiArrowRight className="ml-2 h-5 w-5" />
@@ -523,7 +519,7 @@ const OurServices = () => {
               href="https://calendly.com/vatsjay759/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-indigo-700 text-white border-2 border-white font-semibold shadow-lg hover:bg-indigo-800 transition-colors text-lg"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-indigo-700 !text-white border-2 border-white font-semibold shadow-lg hover:bg-indigo-800 transition-colors text-lg"
             >
               Talk to Our Solution Architect
               <FiArrowRight className="ml-2 h-5 w-5" />

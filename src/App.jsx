@@ -33,13 +33,15 @@ import CommentaryGPT from './component/projects/CommentaryGPT';
 import UserAuthorizationSystem from './component/projects/UserAuthorizationSystem';
 import AuthPilot from './component/projects/AuthPilot';
 import FGAUserAuthorization from './component/projects/FGAUserAuthorization';
+import Header from "./component/common/Header";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-   <Router>
+    <Router>
       <div className="min-h-screen flex flex-col bg-white">
+        <Header />
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -59,7 +61,7 @@ function App() {
             <Route path="/rebac" element={<ReBAC />} />
             <Route path="/rbac" element={<RBAC />} />
             <Route path="/abac" element={<ABAC />} />
-            
+
             {/* Individual blog routes */}
             <Route path="/blogs/fine-grained-authorization" element={<FineGrainedAuthorization />} />
             <Route path="/blogs/llm-backend-integration" element={<LLMBackendIntegration />} />
@@ -69,7 +71,7 @@ function App() {
             <Route path="/blogs/scalable-backend-development" element={<ScalableBackendDevelopment />} />
             <Route path="/blogs/zanzibar-fga-explained" element={<ZanzibarFGAExplained />} />
             <Route path="/blogs/openfga-zanzibar-use-case" element={<OpenFGAZanzibarUseCase />} />
-            
+
             {/* Individual project routes */}
             <Route path="/projects/commentarygpt" element={<CommentaryGPT />} />
             <Route path="/projects/user-authorization-system" element={<UserAuthorizationSystem />} />

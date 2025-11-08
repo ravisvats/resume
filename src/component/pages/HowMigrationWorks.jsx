@@ -1,14 +1,9 @@
 import React from 'react';
 import { FiArrowRight, FiCheckCircle, FiShield, FiZap, FiTrendingUp, FiClock, FiTarget, FiCode, FiBarChart, FiGlobe, FiAward } from 'react-icons/fi';
-import Intro from '../homepage/Intro';
 
 const HowMigrationWorks = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="bg-white shadow-sm sticky top-0 z-30">
-        <Intro />
-      </div>
-
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
