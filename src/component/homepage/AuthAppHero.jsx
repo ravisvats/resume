@@ -16,24 +16,24 @@ const AuthAppHero = () => {
     <section className="w-full">
       <div className="relative overflow-hidden rounded-2xl">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-purple-50" />
-        <div className="relative px-6 md:px-12 py-12 md:py-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">
+        <div className="relative px-4 sm:px-6 md:px-12 py-8 sm:py-12 md:py-16">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">
               AuthApp™ — Continuous Fine-Grained Authorization as a Service
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 mt-4">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 mt-3 sm:mt-4">
               Secure, Scalable, Real-Time Access Control for Modern Applications
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
             {/* Left Column: Features */}
-            <div className="bg-white rounded-xl p-8 border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
-                  <FiShield className="h-6 w-6 text-indigo-600" />
+            <div className="bg-white rounded-xl p-5 sm:p-6 md:p-8 border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                  <FiShield className="h-5 w-5 sm:h-6 sm:w-6 text-indigo-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Features</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900">Features</h3>
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -68,12 +68,12 @@ const AuthAppHero = () => {
             </div>
 
             {/* Right Column: Advantages / Support */}
-            <div className="bg-white rounded-xl p-8 border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                  <FiUsers className="h-6 w-6 text-purple-600" />
+            <div className="bg-white rounded-xl p-5 sm:p-6 md:p-8 border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                  <FiUsers className="h-5 w-5 sm:h-6 sm:w-6 text-purple-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Advantages & Support</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900">Advantages & Support</h3>
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -108,13 +108,13 @@ const AuthAppHero = () => {
             </div>
           </div>
 
-          <div className="mt-12 text-center">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="mt-8 sm:mt-12 text-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a
                 href="https://calendly.com/vatsjay759/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition-colors"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-sm sm:text-base"
               >
                 Book a Consultation
               </a>
@@ -122,13 +122,13 @@ const AuthAppHero = () => {
                 href="https://wa.me/918875603044"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-white text-gray-900 border-2 border-gray-300 font-semibold shadow hover:bg-gray-50 transition-colors"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg bg-white text-gray-900 border-2 border-gray-300 font-semibold shadow hover:bg-gray-50 transition-colors text-sm sm:text-base"
               >
                 Connect on WhatsApp
               </a>
               <a
                 href="/authapp"
-                className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-purple-600 text-white font-semibold shadow-lg hover:bg-purple-700 transition-colors"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg bg-purple-600 text-white font-semibold shadow-lg hover:bg-purple-700 transition-colors text-sm sm:text-base"
               >
                 Explore Services
               </a>

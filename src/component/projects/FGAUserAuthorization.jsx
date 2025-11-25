@@ -6,14 +6,14 @@ const FGAUserAuthorization = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
       {/* Header */}
       <div className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-6 py-6">
-          <div className="flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
+          <div className="flex items-center justify-between flex-wrap gap-3">
             <div>
-              <Link to="/projects" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2">
+              <Link to="/projects" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2 text-sm sm:text-base">
                 ← Back to Projects
               </Link>
             </div>
-            <Link to="/" className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors">
+            <Link to="/" className="px-3 sm:px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors text-sm sm:text-base">
               Home
             </Link>
           </div>
@@ -21,17 +21,17 @@ const FGAUserAuthorization = () => {
       </div>
 
       {/* Project Header */}
-      <section className="max-w-7xl mx-auto px-6 py-12">
-        <div className="text-center mb-12">
-          <div className="mb-6">
-            <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="mb-4 sm:mb-6">
+            <span className="bg-green-100 text-green-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium">
               3 Months • AWS • Python
             </span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4 sm:mb-6 leading-tight px-2">
             Outsourcing Client-Side Setup — FGA User Authorization from Scratch
           </h1>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto px-2">
             A complete end-to-end setup of Fine-Grained Authorization (FGA) for a client application, 
             built from scratch to enable scalable, secure, and compliant user access control.
           </p>
@@ -39,22 +39,22 @@ const FGAUserAuthorization = () => {
       </section>
 
       {/* Overview Section */}
-      <section className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Overview</h2>
+      <section className="bg-white py-8 sm:py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">Overview</h2>
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
               This project involved designing and implementing a complete Fine-Grained Authorization (FGA) system 
               for a client application from ground up. Over 3 months, I built a comprehensive authorization infrastructure 
               that enables scalable, secure, and compliant user access control using modern FGA principles.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8">
               The solution included authorization modeling, validation libraries, automated schema synchronization, 
               data migration pipelines, and a complete management UI for roles and permissions.
             </p>
             
             {/* Project Image */}
-            <div className="flex justify-center mt-8">
+            <div className="flex justify-center mt-6 sm:mt-8">
               <img 
                 src="/images/outsourcing_fga_auth.png" 
                 alt="FGA User Authorization System" 
@@ -66,15 +66,15 @@ const FGAUserAuthorization = () => {
       </section>
 
       {/* Built Components Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Built Components</h2>
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">Built Components</h2>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white rounded-xl p-8 shadow-md border border-gray-200">
-              <div className="text-4xl mb-4">🧩</div>
-              <h3 className="font-bold text-gray-900 mb-3 text-xl">Authorization Model</h3>
-              <p className="text-gray-700 leading-relaxed">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
+            <div className="bg-white rounded-xl p-5 sm:p-6 md:p-8 shadow-md border border-gray-200">
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🧩</div>
+              <h3 className="font-bold text-gray-900 mb-2 sm:mb-3 text-lg sm:text-xl">Authorization Model</h3>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                 Designed a fine-grained ReBAC model for dynamic access control that supports complex 
                 relationship-based permissions and scales with business growth.
               </p>
@@ -147,15 +147,15 @@ const FGAUserAuthorization = () => {
       </section>
 
       {/* Tech Stack Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Tech Stack</h2>
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">Tech Stack</h2>
           
-          <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center border border-blue-200">
-              <div className="text-4xl mb-3">🐍</div>
-              <h4 className="font-bold text-gray-900 mb-2">Python</h4>
-              <p className="text-sm text-gray-600">FastAPI for APIs</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 sm:p-5 md:p-6 text-center border border-blue-200">
+              <div className="text-3xl sm:text-4xl mb-2 sm:mb-3">🐍</div>
+              <h4 className="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Python</h4>
+              <p className="text-xs sm:text-sm text-gray-600">FastAPI for APIs</p>
             </div>
             <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 text-center border border-orange-200">
               <div className="text-4xl mb-3">☁️</div>
@@ -197,38 +197,38 @@ const FGAUserAuthorization = () => {
       </section>
 
       {/* Key Metrics Section */}
-      <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Key Results</h2>
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-green-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">Key Results</h2>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center border border-gray-200">
-              <div className="text-5xl text-blue-600 mb-4">⚡</div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-2">~40%</h3>
-              <p className="text-gray-700 font-medium">Reduced Authorization Latency</p>
+          <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+            <div className="bg-white rounded-xl p-6 sm:p-8 shadow-lg text-center border border-gray-200">
+              <div className="text-4xl sm:text-5xl text-blue-600 mb-3 sm:mb-4">⚡</div>
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">~40%</h3>
+              <p className="text-sm sm:text-base text-gray-700 font-medium">Reduced Authorization Latency</p>
             </div>
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center border border-gray-200">
-              <div className="text-5xl text-green-600 mb-4">🤖</div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-2">80%</h3>
-              <p className="text-gray-700 font-medium">Reduced Manual Overhead</p>
+            <div className="bg-white rounded-xl p-6 sm:p-8 shadow-lg text-center border border-gray-200">
+              <div className="text-4xl sm:text-5xl text-green-600 mb-3 sm:mb-4">🤖</div>
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">80%</h3>
+              <p className="text-sm sm:text-base text-gray-700 font-medium">Reduced Manual Overhead</p>
             </div>
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center border border-gray-200">
-              <div className="text-5xl text-purple-600 mb-4">✓</div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-2">100%</h3>
-              <p className="text-gray-700 font-medium">Audit Compliance (SOC 2-ready)</p>
+            <div className="bg-white rounded-xl p-6 sm:p-8 shadow-lg text-center border border-gray-200">
+              <div className="text-4xl sm:text-5xl text-purple-600 mb-3 sm:mb-4">✓</div>
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">100%</h3>
+              <p className="text-sm sm:text-base text-gray-700 font-medium">Audit Compliance (SOC 2-ready)</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Team Size Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">Project Team</h2>
-          <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-12 border border-indigo-200">
-            <div className="text-5xl mb-6">👥</div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">2 Developers + 1 DevOps Engineer</h3>
-            <p className="text-gray-700">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12">Project Team</h2>
+          <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-6 sm:p-8 md:p-12 border border-indigo-200">
+            <div className="text-4xl sm:text-5xl mb-4 sm:mb-6">👥</div>
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">2 Developers + 1 DevOps Engineer</h3>
+            <p className="text-sm sm:text-base text-gray-700">
               Cross-functional team with expertise in backend development, cloud infrastructure, and authorization systems
             </p>
           </div>
@@ -236,25 +236,25 @@ const FGAUserAuthorization = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div className="max-w-4xl mx-auto px-6 text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 md:mb-8">
             Need Similar Authorization Setup?
           </h2>
-          <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-8 sm:mb-10 md:mb-12 max-w-3xl mx-auto">
             Let's discuss how I can help you implement Fine-Grained Authorization for your application
           </p>
           
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
             <a
               href="mailto:ravisvats@gmail.com"
-              className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors shadow-xl"
+              className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-white text-blue-600 rounded-lg text-base sm:text-lg font-semibold hover:bg-gray-100 transition-colors shadow-xl"
             >
               Get In Touch
             </a>
             <Link 
               to="/projects"
-              className="inline-block px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+              className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-white text-white rounded-lg text-base sm:text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
             >
               View More Projects →
             </Link>
@@ -263,12 +263,12 @@ const FGAUserAuthorization = () => {
       </section>
 
       {/* Navigation */}
-      <div className="max-w-7xl mx-auto px-6 py-12 border-t border-gray-200">
-        <div className="flex justify-between items-center">
-          <Link to="/projects/user-authorization-system" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 border-t border-gray-200">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+          <Link to="/projects/user-authorization-system" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2 text-sm sm:text-base">
             ← Previous Project
           </Link>
-          <Link to="/projects/authpilot" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2">
+          <Link to="/projects/authpilot" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2 text-sm sm:text-base">
             Next Project →
           </Link>
         </div>

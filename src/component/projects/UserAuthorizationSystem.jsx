@@ -6,12 +6,12 @@ const Project2 = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
       {/* Header */}
       <div className="bg-white shadow-sm border-b">
-        <div className="max-w-4xl mx-auto px-6 py-6">
-          <div className="flex items-center justify-between">
-            <Link to="/projects" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
+          <div className="flex items-center justify-between flex-wrap gap-3">
+            <Link to="/projects" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2 text-sm sm:text-base">
               ← Back to Projects
             </Link>
-            <Link to="/" className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors">
+            <Link to="/" className="px-3 sm:px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors text-sm sm:text-base">
               Home
             </Link>
           </div>
@@ -19,20 +19,20 @@ const Project2 = () => {
       </div>
 
       {/* Project Content */}
-      <article className="max-w-4xl mx-auto px-6 py-12">
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         {/* Project Header */}
-        <header className="mb-12">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Authorization</span>
-            <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium">Security</span>
-            <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-medium">Backend</span>
+        <header className="mb-8 sm:mb-12">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
+            <span className="bg-indigo-100 text-indigo-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">Authorization</span>
+            <span className="bg-red-100 text-red-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">Security</span>
+            <span className="bg-yellow-100 text-yellow-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">Backend</span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
             User Authorization System Using FGA
           </h1>
 
-          <p className="text-xl text-gray-600 leading-relaxed mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-6 sm:mb-8">
             A fine-grained access control system that dynamically manages user permissions based on roles, relationships,
             and contextual attributes using Google Zanzibar-style FGA architecture.
           </p>
@@ -40,22 +40,22 @@ const Project2 = () => {
           <img
             src="/images/fga.jpeg"
             alt="Fine-Grained Authorization System"
-            className="w-full h-64 md:h-80 object-cover rounded-xl shadow-lg"
+            className="w-full h-48 sm:h-64 md:h-80 object-cover rounded-xl shadow-lg"
           />
         </header>
 
         {/* Project Details */}
         <div className="prose prose-lg max-w-none">
-          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Project Overview</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">Project Overview</h2>
+          <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4 sm:mb-6">
             This advanced authorization system implements Fine-Grained Authorization (FGA) principles inspired by Google's Zanzibar,
             providing a scalable, flexible, and secure way to manage complex permission structures. The system supports
             relationship-based access control, contextual permissions, and real-time authorization decisions.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Core Features</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">Core Features</h2>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
             <div className="bg-blue-50 rounded-lg p-6">
               <h4 className="font-semibold text-blue-900 mb-3">🔐 Relationship-Based Access</h4>
               <p className="text-blue-800 text-sm">
@@ -173,9 +173,9 @@ const Project2 = () => {
             compliance reporting and security analysis.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Technology Stack</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">Technology Stack</h2>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h4 className="font-semibold text-gray-900 mb-3">Backend</h4>
               <ul className="text-gray-700 text-sm space-y-2">
@@ -334,48 +334,48 @@ POST /v1/authz/relationships/query
         </div>
 
         {/* Project Links */}
-        <div className="mt-12 flex flex-wrap gap-4">
+        <div className="mt-8 sm:mt-12 flex flex-wrap gap-3 sm:gap-4">
           <a
             href="#"
-            className="px-6 py-3 bg-indigo-600 !text-white rounded-lg hover:bg-indigo-700 transition-colors font-medium flex items-center gap-2"
+            className="px-4 sm:px-6 py-2 sm:py-3 bg-indigo-600 !text-white rounded-lg hover:bg-indigo-700 transition-colors font-medium flex items-center gap-2 text-sm sm:text-base"
           >
             🔐 Live Demo
           </a>
           <a
             href="#"
-            className="px-6 py-3 bg-gray-800 !text-white rounded-lg hover:bg-gray-900 transition-colors font-medium flex items-center gap-2"
+            className="px-4 sm:px-6 py-2 sm:py-3 bg-gray-800 !text-white rounded-lg hover:bg-gray-900 transition-colors font-medium flex items-center gap-2 text-sm sm:text-base"
           >
             📱 GitHub Repository
           </a>
           <a
             href="#"
-            className="px-6 py-3 bg-green-600 !text-white rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center gap-2"
+            className="px-4 sm:px-6 py-2 sm:py-3 bg-green-600 !text-white rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center gap-2 text-sm sm:text-base"
           >
             📄 API Documentation
           </a>
         </div>
 
         {/* Author Section */}
-        <div className="border-t border-gray-200 mt-12 pt-8">
-          <div className="flex items-center gap-4">
+        <div className="border-t border-gray-200 mt-8 sm:mt-12 pt-6 sm:pt-8">
+          <div className="flex items-center gap-3 sm:gap-4">
             <img
               src="/src/assets/ravi_passport.jpeg"
               alt="Ravi Vats"
-              className="w-16 h-16 rounded-full object-cover"
+              className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover"
             />
             <div>
-              <h4 className="font-semibold text-gray-900">Ravi Vats</h4>
-              <p className="text-gray-600 text-sm">Security engineer and backend developer with expertise in authorization systems.</p>
+              <h4 className="font-semibold text-gray-900 text-sm sm:text-base">Ravi Vats</h4>
+              <p className="text-gray-600 text-xs sm:text-sm">Security engineer and backend developer with expertise in authorization systems.</p>
             </div>
           </div>
         </div>
 
         {/* Navigation */}
-        <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
-          <Link to="/projects/project1" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200">
+          <Link to="/projects/project1" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2 text-sm sm:text-base">
             ← Previous Project
           </Link>
-          <Link to="/projects/project3" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2">
+          <Link to="/projects/project3" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2 text-sm sm:text-base">
             Next Project →
           </Link>
         </div>

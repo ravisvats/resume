@@ -144,24 +144,24 @@ const Blog = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
       {/* Header */}
       <div className="bg-white shadow-sm border-b sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-6 py-6">
-          <div className="flex items-center justify-between">
-            <div className='flex items-center'>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className='flex items-center gap-2 sm:gap-3'>
               <a href="/">
                 <img
                   src={passport}
                   alt="Ravi Shankar Vats"
-                  className="w-[44px] h-[44px] object-cover rounded-full border-2 mr-2"
+                  className="w-10 h-10 sm:w-[44px] sm:h-[44px] object-cover rounded-full border-2"
                 />
               </a>
               <div>
-                <h1 className="text-4xl font-bold text-gray-900">Blogs</h1>
-                <p className="text-gray-600 mt-2 text-lg">Thoughts, tutorials, and insights on web development</p>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">Blogs</h1>
+                <p className="text-sm sm:text-base md:text-lg text-gray-600 mt-1 sm:mt-2">Thoughts, tutorials, and insights on web development</p>
               </div>
             </div>
             <Link
               to="/"
-              className="px-6 py-3 bg-blue-600 !text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+              className="px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 !text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm sm:text-base whitespace-nowrap"
             >
               ← Back to Home
             </Link>
@@ -169,9 +169,9 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
         {/* Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
           <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-6 text-white">
             <div className="flex items-center justify-between">
               <div>
@@ -210,16 +210,16 @@ const Blog = () => {
         </div>
 
         {/* Main Content Area with Sidebar */}
-        <div className="grid lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Main Content - Left Side */}
-          <div className="lg:col-span-3 space-y-8">
+          <div className="lg:col-span-3 space-y-6 sm:space-y-8">
             {/* Navigation Tabs */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2 sm:gap-3">
               {sections.map((section) => (
                 <button
                   key={section}
                   onClick={() => setActiveSection(section)}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${activeSection === section
+                  className={`px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium transition-all duration-200 text-sm sm:text-base ${activeSection === section
                     ? 'bg-blue-600 text-white shadow-lg transform scale-105'
                     : 'bg-white text-[#777] hover:bg-gray-50 border border-gray-200 hover:border-gray-300'
                     }`}
@@ -241,8 +241,8 @@ const Blog = () => {
                   <div className="h-px bg-gradient-to-r from-gray-300 to-transparent flex-1"></div>
                 </div>
 
-                <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 border border-blue-100">
-                  <div className="grid md:grid-cols-3 gap-8 items-center">
+                <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-4 sm:p-6 md:p-8 border border-blue-100">
+                  <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center">
                     <div className="md:col-span-2">
                       <div className="flex items-center gap-3 mb-4">
                         <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -251,11 +251,11 @@ const Blog = () => {
                         <span className="text-gray-500 text-sm">{popularPosts[0].views.toLocaleString()} views</span>
                       </div>
 
-                      <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight">
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight">
                         {popularPosts[0].title}
                       </h3>
 
-                      <p className="text-gray-600 leading-relaxed mb-6">
+                      <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-4 sm:mb-6">
                         {popularPosts[0].excerpt}
                       </p>
 
@@ -273,7 +273,7 @@ const Blog = () => {
 
                       <Link
                         to={popularPosts[0].link}
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 !text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium inline-block"
+                        className="bg-gradient-to-r from-blue-600 to-purple-600 !text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium inline-block text-sm sm:text-base"
                       >
                         Read Full Article →
                       </Link>
@@ -283,7 +283,7 @@ const Blog = () => {
                       <img
                         src={popularPosts[0].image}
                         alt={popularPosts[0].title}
-                        className="w-full h-48 object-cover rounded-xl"
+                        className="w-full h-40 sm:h-48 object-cover rounded-xl"
                       />
                     </div>
                   </div>
@@ -375,15 +375,15 @@ const Blog = () => {
           </div>
 
           {/* Sidebar - Right Side */}
-          <div className="lg:col-span-1 space-y-6">
+          <div className="lg:col-span-1 space-y-4 sm:space-y-6">
             {/* Search Box */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">🔍 Search Posts</h3>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-sm border border-gray-100">
+              <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-3 sm:mb-4">🔍 Search Posts</h3>
               <div className="relative">
                 <input
                   type="text"
                   placeholder="Search articles..."
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                 />
                 <button className="absolute right-3 top-3 text-gray-400 hover:text-gray-600">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -394,13 +394,13 @@ const Blog = () => {
             </div>
 
             {/* Popular Tags */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">🏷️ Popular Tags</h3>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-sm border border-gray-100">
+              <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-3 sm:mb-4">🏷️ Popular Tags</h3>
               <div className="flex flex-wrap gap-2">
                 {allTags.map((tag, index) => (
                   <span
                     key={index}
-                    className="px-3 py-2 bg-blue-50 text-blue-700 text-sm rounded-lg hover:bg-blue-100 transition-colors cursor-pointer border border-blue-100"
+                    className="px-2 sm:px-3 py-1.5 sm:py-2 bg-blue-50 text-blue-700 text-xs sm:text-sm rounded-lg hover:bg-blue-100 transition-colors cursor-pointer border border-blue-100"
                   >
                     {tag}
                   </span>
@@ -409,8 +409,8 @@ const Blog = () => {
             </div>
 
             {/* Recent Posts Widget */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">📰 Recent Posts</h3>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-sm border border-gray-100">
+              <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-3 sm:mb-4">📰 Recent Posts</h3>
               <div className="space-y-4">
                 {recentPosts.slice(0, 4).map((post) => (
                   <Link to={post.link} key={post.id} className="group cursor-pointer block">
@@ -428,8 +428,8 @@ const Blog = () => {
             </div>
 
             {/* Most Popular Widget */}
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 border border-orange-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">🔥 Most Popular</h3>
+            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-4 sm:p-6 border border-orange-100">
+              <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-3 sm:mb-4">🔥 Most Popular</h3>
               <div className="space-y-4">
                 {popularPosts.slice(0, 3).map((post, index) => (
                   <Link to={post.link} key={post.id} className="group cursor-pointer block">
@@ -454,26 +454,26 @@ const Blog = () => {
             </div>
 
             {/* Newsletter Signup */}
-            <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-6 text-white">
-              <h3 className="text-lg font-bold mb-3">📧 Newsletter</h3>
-              <p className="text-blue-100 text-sm mb-4">
+            <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-4 sm:p-6 text-white">
+              <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3">📧 Newsletter</h3>
+              <p className="text-blue-100 text-xs sm:text-sm mb-3 sm:mb-4">
                 Get weekly updates with new posts and insights!
               </p>
-              <div className="space-y-3">
+              <div className="space-y-2 sm:space-y-3">
                 <input
                   type="email"
                   placeholder="Your email"
                   className="w-full px-3 py-2 rounded-lg text-gray-900 placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
                 />
-                <button className="w-full bg-white text-white py-2 rounded-lg font-medium text-sm hover:bg-gray-100 transition-colors">
+                <button className="w-full bg-white text-blue-600 py-2 rounded-lg font-medium text-sm hover:bg-gray-100 transition-colors">
                   Subscribe
                 </button>
               </div>
             </div>
 
             {/* Social Links */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">🤝 Connect</h3>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-sm border border-gray-100">
+              <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-3 sm:mb-4">🤝 Connect</h3>
               <div className="space-y-3">
                 <a href="#" className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors">
                   <span className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">📘</span>

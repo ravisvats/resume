@@ -61,24 +61,24 @@ const Projects = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Header */}
       <div className="bg-white shadow-sm border-b">
-        <div className="max-w-6xl mx-auto px-4 py-6">
-          <div className="flex items-center justify-between">
-            <div className='flex items-center'>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className='flex items-center gap-2 sm:gap-3'>
               <a href="/">
                 <img
                   src={passport}
                   alt="Ravi Shankar Vats"
-                  className="w-[44px] h-[44px] object-cover rounded-full border-2 mr-2"
+                  className="w-10 h-10 sm:w-[44px] sm:h-[44px] object-cover rounded-full border-2"
                 />
               </a>
               <div>
-                <h1 className="text-3xl font-bold text-gray-900">Projects</h1>
-                <p className="text-gray-600 mt-2">A showcase of my development work and technical expertise</p>
+                <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">Projects</h1>
+                <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">A showcase of my development work and technical expertise</p>
               </div>
             </div>
             <Link
               to="/"
-              className="px-4 py-2 bg-blue-600 !text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="px-3 sm:px-4 py-2 bg-blue-600 !text-white rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base whitespace-nowrap"
             >
               ← Back to Home
             </Link>
@@ -86,12 +86,12 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         {/* Featured Projects */}
         {featuredProjects.length > 0 && (
-          <section className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Projects</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <section className="mb-12 sm:mb-16">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">Featured Projects</h2>
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {featuredProjects.map((project) => (
                 <div
                   key={project.id}
@@ -151,12 +151,12 @@ const Projects = () => {
         )}
 
         {/* Category Filter */}
-        <div className="flex flex-wrap gap-3 mb-8">
+        <div className="flex flex-wrap gap-2 sm:gap-3 mb-6 sm:mb-8">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 rounded-lg transition-colors ${selectedCategory === category
+              className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors text-sm sm:text-base ${selectedCategory === category
                 ? 'bg-blue-600 text-white'
                 : 'bg-white text-[#777] hover:bg-gray-50 border border-gray-200'
                 }`}
@@ -171,7 +171,7 @@ const Projects = () => {
         </div>
 
         {/* All Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {filteredProjects.map((project) => (
             <div
               key={project.id}

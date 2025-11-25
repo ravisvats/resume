@@ -20,14 +20,14 @@ const TechStack = () => {
   const [hoveredTech, setHoveredTech] = useState(null);
 
   return (
-    <section className="py-12 bg-white text-left px-4 md:px-8">
+    <section className="py-8 sm:py-12 bg-white text-left px-4 sm:px-6 md:px-8">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-800 mb-2">My Tech Stack</h2>
-        <p className="text-gray-600 mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">My Tech Stack</h2>
+        <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">
           Technologies I've been working with recently
         </p>
 
-        <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-6 gap-4 justify-items-center items-center">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-6 gap-3 sm:gap-4 justify-items-center items-center">
           {techStack.map((tech, index) => (
             <div 
               key={index} 
@@ -35,11 +35,11 @@ const TechStack = () => {
               onMouseEnter={() => setHoveredTech(index)}
               onMouseLeave={() => setHoveredTech(null)}
             >
-              <div className="w-12 h-12 flex items-center justify-center bg-gray-50 rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-300 hover:shadow-md cursor-pointer">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-gray-50 rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-300 hover:shadow-md cursor-pointer">
                 <img
                   src={tech?.src}
                   alt={tech.name}
-                  className="w-7 h-7 object-contain transition-transform hover:scale-110 duration-300"
+                  className="w-6 h-6 sm:w-7 sm:h-7 object-contain transition-transform hover:scale-110 duration-300"
                 />
               </div>
               
@@ -55,18 +55,18 @@ const TechStack = () => {
         </div>
 
         {/* Technology Categories */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-600">
-          <div className="bg-blue-50 rounded-lg p-4">
-            <h4 className="font-semibold text-blue-800 mb-2">Backend</h4>
-            <p>Python, FastAPI, PHP, Django, Flask</p>
+        <div className="mt-6 sm:mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-xs sm:text-sm text-gray-600">
+          <div className="bg-blue-50 rounded-lg p-3 sm:p-4">
+            <h4 className="font-semibold text-blue-800 mb-1 sm:mb-2 text-sm sm:text-base">Backend</h4>
+            <p className="text-xs sm:text-sm">Python, FastAPI, PHP, Django, Flask</p>
           </div>
-          <div className="bg-green-50 rounded-lg p-4">
-            <h4 className="font-semibold text-green-800 mb-2">Database</h4>
-            <p>MySQL, MongoDB, PostgreSQL, Redis</p>
+          <div className="bg-green-50 rounded-lg p-3 sm:p-4">
+            <h4 className="font-semibold text-green-800 mb-1 sm:mb-2 text-sm sm:text-base">Database</h4>
+            <p className="text-xs sm:text-sm">MySQL, MongoDB, PostgreSQL, Redis</p>
           </div>
-          <div className="bg-purple-50 rounded-lg p-4">
-            <h4 className="font-semibold text-purple-800 mb-2">Cloud & Tools</h4>
-            <p>AWS, Docker, Git, VS Code</p>
+          <div className="bg-purple-50 rounded-lg p-3 sm:p-4">
+            <h4 className="font-semibold text-purple-800 mb-1 sm:mb-2 text-sm sm:text-base">Cloud & Tools</h4>
+            <p className="text-xs sm:text-sm">AWS, Docker, Git, VS Code</p>
           </div>
         </div>
       </div>
