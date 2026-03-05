@@ -61,7 +61,7 @@ const Blog5 = () => {
         <div className="prose prose-lg max-w-none">
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Introduction</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            FastAPI has quickly become one of the most popular Python frameworks for building APIs. Its automatic API documentation, 
+            FastAPI has quickly become one of the most popular Python framework for building APIs. It's automatic API documentation, 
             high performance, and modern Python features make it an excellent choice for production applications. 
             In this guide, we'll walk through deploying a FastAPI application to AWS EC2 with a production-ready setup.
           </p>
