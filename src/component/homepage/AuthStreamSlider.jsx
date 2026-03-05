@@ -46,7 +46,7 @@ const AuthStreamSlider = () => {
             href="https://calendly.com/vatsjay759/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-lg bg-indigo-600 text-black font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-base sm:text-lg whitespace-nowrap"
+            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-lg bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-base sm:text-lg whitespace-nowrap"
           >
             Book a Free Assessment
           </a>
@@ -137,10 +137,10 @@ const AuthStreamSlider = () => {
         <div className="text-center mt-4 sm:mt-6">
           <a
             href="/service-packages"
-            className="inline-flex items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg bg-indigo-600 text-black font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-base sm:text-lg whitespace-nowrap"
+            className="inline-flex items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-base sm:text-lg whitespace-nowrap"
           >
             Explore Service Packages
-            <FiArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-black" />
+            <FiArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-white" />
           </a>
         </div>
       </div>
@@ -194,10 +194,10 @@ const AuthStreamSlider = () => {
         <div className="text-center mt-4 sm:mt-6">
           <a
             href="/how-migration-works"
-            className="inline-flex items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg bg-emerald-600 text-black font-semibold shadow-lg hover:bg-emerald-700 transition-colors text-base sm:text-lg whitespace-nowrap"
+            className="inline-flex items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg bg-emerald-600 text-white font-semibold shadow-lg hover:bg-emerald-700 transition-colors text-base sm:text-lg whitespace-nowrap"
           >
             See How Migration Works
-            <FiArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-black" />
+            <FiArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-white" />
           </a>
         </div>
       </div>
@@ -253,10 +253,10 @@ const AuthStreamSlider = () => {
             href="https://calendly.com/vatsjay759/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg bg-amber-600 text-black font-semibold shadow-lg hover:bg-amber-700 transition-colors text-base sm:text-lg whitespace-nowrap"
+            className="inline-flex items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg bg-amber-600 text-white font-semibold shadow-lg hover:bg-amber-700 transition-colors text-base sm:text-lg whitespace-nowrap"
           >
             Request Compliance Demo
-            <FiArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-black" />
+            <FiArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-white" />
           </a>
         </div>
       </div>
@@ -269,7 +269,7 @@ const AuthStreamSlider = () => {
       <div className="max-w-6xl mx-auto w-full">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight mb-3 sm:mb-4 px-2">
-            Global Engineering, Local Impact
+            Global Engineering | Local Impact
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             AuthStream's dedicated offshore teams bring deep security and backend expertise to deliver enterprise-grade authorization as a managed service — faster and more cost-effective than building in-house.
@@ -310,10 +310,10 @@ const AuthStreamSlider = () => {
             href="https://calendly.com/vatsjay759/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg bg-purple-600 text-black font-semibold shadow-lg hover:bg-purple-700 transition-colors text-base sm:text-lg whitespace-nowrap"
+            className="inline-flex items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg bg-purple-600 text-white font-semibold shadow-lg hover:bg-purple-700 transition-colors text-base sm:text-lg whitespace-nowrap"
           >
             Talk to an Expert
-            <FiArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-black" />
+            <FiArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-white" />
           </a>
         </div>
       </div>
@@ -335,7 +335,7 @@ const AuthStreamSlider = () => {
             href="https://calendly.com/vatsjay759/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg bg-indigo-600 text-black font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-base sm:text-lg whitespace-nowrap"
+            className="inline-flex items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition-colors text-base sm:text-lg whitespace-nowrap"
           >
             Start Free Assessment
           </a>

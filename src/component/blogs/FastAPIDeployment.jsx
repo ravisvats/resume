@@ -69,7 +69,7 @@ const Blog5 = () => {
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Prerequisites</h2>
           <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
             <li>An AWS account with EC2 access</li>
-            <li>A FastAPI application ready for deployment</li>
+            <li>A FastAPI application ready for deployments</li>
             <li>Basic familiarity with Linux command line</li>
             <li>SSH key pair for EC2 access</li>
           </ul>
