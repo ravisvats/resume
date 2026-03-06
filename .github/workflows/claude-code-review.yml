@@ -2,15 +2,11 @@ name: Claude Code Review
 
 on:
   pull_request:
-    types: [opened, ready_for_review]
-    # Only runs when PR is first opened or marked ready — not on every push
-    # This saves credits significantly
+    types: [labeled]
 
 jobs:
   claude-review:
-    # Only run if PR has the 'claude-review' label OR is opened by a non-owner
-    # Remove the if condition below to run on ALL PRs (costs more)
-    if: contains(github.event.pull_request.labels.*.name, 'claude-review')
+    if: github.event.label.name == 'claude-review'
 
     runs-on: ubuntu-latest
     permissions:
