@@ -6,7 +6,7 @@ const AuthStreamSlider = () => {
   const [hasUserInteracted, setHasUserInteracted] = useState(false);
   const totalSlides = 6;
 
-  // Auto-advance slides every 4 seconds, but only if user hasn't interacted in the app
+  // Auto-advance slides every 4 seconds, but only if user hasn't interacted in the app lets test this
   useEffect(() => {
     if (hasUserInteracted) return;
     
