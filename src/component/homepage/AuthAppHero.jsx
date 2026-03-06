@@ -22,7 +22,7 @@ const AuthAppHero = () => {
               AuthApp™ — Continuous Fine-Grained Authorization as a Service
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mt-3 sm:mt-4">
-              Secure, Scalable, Real-Time Access Control for Modern Applications
+              Secure, Scalable & Real-Time Access Control for Modern Applications
             </p>
           </div>
 
